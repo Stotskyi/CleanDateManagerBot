@@ -1,0 +1,14 @@
+/Users/admin/RiderProjects/WebApplication2/Picker.Infrastructure/bin/Debug/net8.0/Picker.Infrastructure.deps.json
+/Users/admin/RiderProjects/WebApplication2/Picker.Infrastructure/bin/Debug/net8.0/Picker.Infrastructure.runtimeconfig.json
+/Users/admin/RiderProjects/WebApplication2/Picker.Infrastructure/bin/Debug/net8.0/Picker.Infrastructure.dll
+/Users/admin/RiderProjects/WebApplication2/Picker.Infrastructure/bin/Debug/net8.0/Picker.Infrastructure.pdb
+/Users/admin/RiderProjects/WebApplication2/Picker.Infrastructure/obj/Debug/net8.0/Picker.Infrastructure.csproj.AssemblyReference.cache
+/Users/admin/RiderProjects/WebApplication2/Picker.Infrastructure/obj/Debug/net8.0/Picker.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/admin/RiderProjects/WebApplication2/Picker.Infrastructure/obj/Debug/net8.0/Picker.Infrastructure.AssemblyInfoInputs.cache
+/Users/admin/RiderProjects/WebApplication2/Picker.Infrastructure/obj/Debug/net8.0/Picker.Infrastructure.AssemblyInfo.cs
+/Users/admin/RiderProjects/WebApplication2/Picker.Infrastructure/obj/Debug/net8.0/Picker.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/admin/RiderProjects/WebApplication2/Picker.Infrastructure/obj/Debug/net8.0/Picker.Infrastructure.dll
+/Users/admin/RiderProjects/WebApplication2/Picker.Infrastructure/obj/Debug/net8.0/refint/Picker.Infrastructure.dll
+/Users/admin/RiderProjects/WebApplication2/Picker.Infrastructure/obj/Debug/net8.0/Picker.Infrastructure.pdb
+/Users/admin/RiderProjects/WebApplication2/Picker.Infrastructure/obj/Debug/net8.0/Picker.Infrastructure.genruntimeconfig.cache
+/Users/admin/RiderProjects/WebApplication2/Picker.Infrastructure/obj/Debug/net8.0/ref/Picker.Infrastructure.dll

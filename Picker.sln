@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Picker", "Picker\Picker.csproj", "{E7E86CE9-BB50-4223-9024-D6799702AB8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Picker.Infrastructure", "Picker.Infrastructure\Picker.Infrastructure.csproj", "{B3F0E531-E89C-4169-A371-8F445DFD7091}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7E86CE9-BB50-4223-9024-D6799702AB8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7E86CE9-BB50-4223-9024-D6799702AB8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7E86CE9-BB50-4223-9024-D6799702AB8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7E86CE9-BB50-4223-9024-D6799702AB8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3F0E531-E89C-4169-A371-8F445DFD7091}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3F0E531-E89C-4169-A371-8F445DFD7091}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3F0E531-E89C-4169-A371-8F445DFD7091}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3F0E531-E89C-4169-A371-8F445DFD7091}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
