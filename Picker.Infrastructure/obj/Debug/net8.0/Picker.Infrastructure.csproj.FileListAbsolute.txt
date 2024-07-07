@@ -12,3 +12,4 @@
 /Users/admin/RiderProjects/WebApplication2/Picker.Infrastructure/obj/Debug/net8.0/Picker.Infrastructure.pdb
 /Users/admin/RiderProjects/WebApplication2/Picker.Infrastructure/obj/Debug/net8.0/Picker.Infrastructure.genruntimeconfig.cache
 /Users/admin/RiderProjects/WebApplication2/Picker.Infrastructure/obj/Debug/net8.0/ref/Picker.Infrastructure.dll
+/Users/admin/RiderProjects/WebApplication2/Picker.Infrastructure/obj/Debug/net8.0/Picker.Infrastructure.sourcelink.json

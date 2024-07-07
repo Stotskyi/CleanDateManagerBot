@@ -123,3 +123,4 @@
 /Users/admin/RiderProjects/WebApplication2/Picker/bin/Debug/net8.0/runtimes/win-arm64/native/libSkiaSharp.dll
 /Users/admin/RiderProjects/WebApplication2/Picker/bin/Debug/net8.0/runtimes/win-x64/native/libSkiaSharp.dll
 /Users/admin/RiderProjects/WebApplication2/Picker/bin/Debug/net8.0/runtimes/win-x86/native/libSkiaSharp.dll
+/Users/admin/RiderProjects/WebApplication2/Picker/obj/Debug/net8.0/Picker.sourcelink.json
