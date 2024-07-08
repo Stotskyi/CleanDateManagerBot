@@ -129,3 +129,4 @@
 /Users/admin/RiderProjects/WebApplication2/Picker/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
 /Users/admin/RiderProjects/WebApplication2/Picker/bin/Debug/net8.0/Microsoft.Extensions.Logging.ApplicationInsights.dll
 /Users/admin/RiderProjects/WebApplication2/Picker/bin/Debug/net8.0/Microsoft.Extensions.Logging.AzureAppServices.dll
+/Users/admin/RiderProjects/WebApplication2/Picker/bin/Debug/net8.0/Picker.staticwebassets.runtime.json

@@ -85,12 +85,11 @@ namespace VilnyyBot.Services
             {
                 var imageData = await coliverRepository.GetCleanersTable();
                 if (imageData is null) return await coliverRepository.GetTextTable();
-                string filePath = "wwwroot/bot.gif";
-                await File.WriteAllBytesAsync(filePath, imageData);
+               
                 await botClient.SendChatActionAsync(message.Chat, ChatAction.UploadPhoto);
                 
-                await using var fileStream = new FileStream("Files/bot.gif", FileMode.Open, FileAccess.Read);
-                await botClient.SendPhotoAsync(message.Chat, new InputFileStream(fileStream));
+                await using var memoryStream = new MemoryStream(imageData);
+                await botClient.SendPhotoAsync(message.Chat, new InputFileStream(memoryStream));
             }
             
             if (message.Text.StartsWith("/cleaner"))
