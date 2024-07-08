@@ -23,6 +23,10 @@ builder.Services.AddDbContext<ApplicationContext>(options =>
 builder.Services.AddControllers().AddNewtonsoftJson();
 builder.Services.AddScoped<IUserStateRepository,UserStateRepository>();
 builder.Services.AddScoped<IColiverRepository,ColiverRepository>();
+
+var dummyConfigurationSection = builder.Configuration.GetSection("Dummy");
+builder.Services.Configure<Dummy>(dummyConfigurationSection);
+
 builder.Services.AddScoped<UpdateHandlers>();
 builder.Services.AddHostedService<ConfigureWebhook>();
 builder.Services.AddHttpClient("telegram_bot_client")
