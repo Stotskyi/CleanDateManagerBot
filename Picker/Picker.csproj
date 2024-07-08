@@ -31,4 +31,8 @@
       <ProjectReference Include="..\Picker.Infrastructure\Picker.Infrastructure.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Include="wwwroot\bot.gif" />
+    </ItemGroup>
+
 </Project>

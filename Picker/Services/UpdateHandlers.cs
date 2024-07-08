@@ -84,7 +84,7 @@ namespace VilnyyBot.Services
             if (message.Text.StartsWith("/table"))
             {
                 var imageData = await coliverRepository.GetCleanersTable();
-                string filePath = "Files/bot.gif";
+                string filePath = "wwwroot/bot.gif";
                 await File.WriteAllBytesAsync(filePath, imageData);
                 await botClient.SendChatActionAsync(message.Chat, ChatAction.UploadPhoto);
                 
