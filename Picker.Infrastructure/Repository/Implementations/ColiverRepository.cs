@@ -209,6 +209,36 @@ public class ColiverRepository(ApplicationContext context) : IColiverRepository
             }
         }
     }
+    
+    public async Task<string> GetTextTable()
+    {
+        var cleaningTimes = await context.CleaningTimes
+            .Include(ct => ct.Colivers)
+            .ToListAsync();
+
+        if (!cleaningTimes.Any()) return "Проєбались записатись";
+        
+        
+        var tableBuilder = new StringBuilder();
+        tableBuilder.AppendLine(" Date               |  Cleaners ");
+        tableBuilder.AppendLine("-------------|----------------------");
+
+        var groupedCleaningTimes = cleaningTimes
+            .GroupBy(ct => ct.Date)
+            .Select(g => new
+            {
+                Date = g.Key,
+                Cleaners = string.Join(", ", g.SelectMany(ct => ct.Colivers.Select(c => c.Username)).Distinct())
+            });
+
+        foreach (var item in groupedCleaningTimes)
+        {
+            var dateStr = item.Date.ToString("yyyy-MM-dd");
+            tableBuilder.AppendLine($"{dateStr} | {item.Cleaners}");
+        }
+
+        return tableBuilder.ToString();
+    }
 }
 
 
@@ -219,3 +249,4 @@ public class CleaningGroup
     public string Cleaners { get; set; }
     public string Names { get; set; }
 }
+
