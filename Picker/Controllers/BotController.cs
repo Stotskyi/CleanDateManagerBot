@@ -5,17 +5,16 @@ using Picker.Infrastructure.Data;
 using Telegram.Bot.Types;
 using VilnyyBot.Services;
 using WebApplication2.Models;
-using WebApplication2.Services;
-
 namespace WebApplication2.Controllers;
 
 
-public class BotController(ApplicationContext context,IOptions<Dummy> options) : ControllerBase
+public class BotController(ApplicationContext context,IOptions<BotConfiguration> options) : ControllerBase
 {
     [HttpPost]
     [ValidateTelegramBot]
     public async Task<IActionResult> Post([FromBody] Update update, [FromServices] UpdateHandlers handleUpdateService, CancellationToken cancellationToken)
     {
+        if (update.Message.Text == "HELOO") return Ok("get out of fuck");
         await handleUpdateService.HandleUpdateAsync(update, cancellationToken);
         return Ok();
     }
@@ -27,9 +26,9 @@ public class BotController(ApplicationContext context,IOptions<Dummy> options) :
     }
     
     [HttpGet("test")]
-    public async Task<string> GetTest()
+    public async Task<OkObjectResult> GetTest()
     {
-        return options.Value.test;
+        return Ok(options);
     }
 
     [HttpGet("GetDatabase")]
@@ -37,9 +36,4 @@ public class BotController(ApplicationContext context,IOptions<Dummy> options) :
     {
         return Ok(await context.Colivers.ToListAsync());
     }
-}
-
-public class Dummy
-{
-    public string test { get; set; }
 }

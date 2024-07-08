@@ -139,6 +139,14 @@
               "target": "Package",
               "version": "[8.0.6, )"
             },
+            "Microsoft.Extensions.Logging.ApplicationInsights": {
+              "target": "Package",
+              "version": "[2.22.0, )"
+            },
+            "Microsoft.Extensions.Logging.AzureAppServices": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
             "SkiaSharp": {
               "target": "Package",
               "version": "[2.88.8, )"

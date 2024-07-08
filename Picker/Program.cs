@@ -25,7 +25,6 @@ builder.Services.AddScoped<IUserStateRepository,UserStateRepository>();
 builder.Services.AddScoped<IColiverRepository,ColiverRepository>();
 
 var dummyConfigurationSection = builder.Configuration.GetSection("Dummy");
-builder.Services.Configure<Dummy>(dummyConfigurationSection);
 
 builder.Services.AddScoped<UpdateHandlers>();
 builder.Services.AddHostedService<ConfigureWebhook>();
