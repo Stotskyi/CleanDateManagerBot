@@ -1624,6 +1624,32 @@
           }
         }
       },
+      "Picker.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Betalgo.OpenAI": "8.3.0",
+          "Picker.Domain": "1.0.0",
+          "Picker.Infrastructure": "1.0.0",
+          "Telegram.Bot": "19.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Picker.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Picker.Application.dll": {}
+        }
+      },
+      "Picker.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Picker.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Picker.Domain.dll": {}
+        }
+      },
       "Picker.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -4513,6 +4539,16 @@
         "telegram.bot.nuspec"
       ]
     },
+    "Picker.Application/1.0.0": {
+      "type": "project",
+      "path": "../Picker.Application/Picker.Application.csproj",
+      "msbuildProject": "../Picker.Application/Picker.Application.csproj"
+    },
+    "Picker.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Picker.Domain/Picker.Domain.csproj",
+      "msbuildProject": "../Picker.Domain/Picker.Domain.csproj"
+    },
     "Picker.Infrastructure/1.0.0": {
       "type": "project",
       "path": "../Picker.Infrastructure/Picker.Infrastructure.csproj",
@@ -4527,6 +4563,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 8.0.6",
       "Microsoft.Extensions.Logging.ApplicationInsights >= 2.22.0",
       "Microsoft.Extensions.Logging.AzureAppServices >= 8.0.6",
+      "Picker.Application >= 1.0.0",
       "Picker.Infrastructure >= 1.0.0",
       "SkiaSharp >= 2.88.8",
       "Swashbuckle.AspNetCore >= 6.4.0",
@@ -4558,6 +4595,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "/Users/admin/RiderProjects/WebApplication2/Picker.Application/Picker.Application.csproj": {
+              "projectPath": "/Users/admin/RiderProjects/WebApplication2/Picker.Application/Picker.Application.csproj"
+            },
             "/Users/admin/RiderProjects/WebApplication2/Picker.Infrastructure/Picker.Infrastructure.csproj": {
               "projectPath": "/Users/admin/RiderProjects/WebApplication2/Picker.Infrastructure/Picker.Infrastructure.csproj"
             }

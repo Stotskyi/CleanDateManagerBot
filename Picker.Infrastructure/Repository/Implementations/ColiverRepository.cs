@@ -216,7 +216,7 @@ public class ColiverRepository(ApplicationContext context) : IColiverRepository
             .Include(ct => ct.Colivers)
             .ToListAsync();
 
-        if (!cleaningTimes.Any()) return "Проєбались записатись";
+        if (!cleaningTimes.Any()) return "Нема нікого:";
         
         
         var tableBuilder = new StringBuilder();

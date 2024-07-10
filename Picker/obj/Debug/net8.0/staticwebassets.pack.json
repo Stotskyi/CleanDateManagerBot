@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/admin/RiderProjects/WebApplication2/Picker/wwwroot/bot.gif",
+      "PackagePath": "staticwebassets/bot.gif"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.Picker.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.Picker.props",
+      "PackagePath": "build\\Picker.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Picker.props",
+      "PackagePath": "buildMultiTargeting\\Picker.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Picker.props",
+      "PackagePath": "buildTransitive\\Picker.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
