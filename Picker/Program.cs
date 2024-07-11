@@ -1,11 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 using OpenAI.Extensions;
+using Picker.Application.Services;
 using Picker.Infrastructure.Data;
 using Picker.Infrastructure.Repository;
 using Picker.Infrastructure.Repository.Implementations;
 using Picker.Infrastructure.Repository.Interfaces;
 using Telegram.Bot;
-using VilnyyBot.Services;
 using WebApplication2;
 using WebApplication2.Controllers;
 using WebApplication2.Extension;
