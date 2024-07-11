@@ -1,0 +1,12 @@
+D:\projects\Vilnyy-bot\Picker.Domain\bin\Debug\net8.0\Picker.Domain.deps.json
+D:\projects\Vilnyy-bot\Picker.Domain\bin\Debug\net8.0\Picker.Domain.dll
+D:\projects\Vilnyy-bot\Picker.Domain\bin\Debug\net8.0\Picker.Domain.pdb
+D:\projects\Vilnyy-bot\Picker.Domain\obj\Debug\net8.0\Picker.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\Vilnyy-bot\Picker.Domain\obj\Debug\net8.0\Picker.Domain.AssemblyInfoInputs.cache
+D:\projects\Vilnyy-bot\Picker.Domain\obj\Debug\net8.0\Picker.Domain.AssemblyInfo.cs
+D:\projects\Vilnyy-bot\Picker.Domain\obj\Debug\net8.0\Picker.Domain.csproj.CoreCompileInputs.cache
+D:\projects\Vilnyy-bot\Picker.Domain\obj\Debug\net8.0\Picker.Domain.sourcelink.json
+D:\projects\Vilnyy-bot\Picker.Domain\obj\Debug\net8.0\Picker.Domain.dll
+D:\projects\Vilnyy-bot\Picker.Domain\obj\Debug\net8.0\refint\Picker.Domain.dll
+D:\projects\Vilnyy-bot\Picker.Domain\obj\Debug\net8.0\Picker.Domain.pdb
+D:\projects\Vilnyy-bot\Picker.Domain\obj\Debug\net8.0\ref\Picker.Domain.dll
