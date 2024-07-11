@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z0/1L7N+EgbJhUyZhfqROjcTvWVQnMvRTfWytPG/kOiI1FKi4WD4jLeAs1t8oM7/9xuY2CxCtFQhXyorRv9EcA==",
+  "dgSpecHash": "8AZcOG3WdthPy0HqJFcdyEk6sHBhoLWJadaJdSME3rPzR1Lh+Zyb+qMB7obI1J/UTAk46EyYD1egdh1d3lpVUQ==",
   "success": true,
-  "projectFilePath": "/Users/admin/RiderProjects/WebApplication2/Picker.Domain/Picker.Domain.csproj",
+  "projectFilePath": "D:\\projects\\Vilnyy-bot\\Picker.Domain\\Picker.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

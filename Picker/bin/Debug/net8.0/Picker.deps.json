@@ -14,6 +14,7 @@
           "Microsoft.EntityFrameworkCore.Design": "8.0.6",
           "Microsoft.Extensions.Logging.ApplicationInsights": "2.22.0",
           "Microsoft.Extensions.Logging.AzureAppServices": "8.0.6",
+          "Picker.Application": "1.0.0",
           "Picker.Infrastructure": "1.0.0",
           "SkiaSharp": "2.88.8",
           "Swashbuckle.AspNetCore": "6.4.0",
@@ -878,6 +879,22 @@
           }
         }
       },
+      "Picker.Application/1.0.0": {
+        "dependencies": {
+          "Betalgo.OpenAI": "8.3.0",
+          "Picker.Domain": "1.0.0",
+          "Picker.Infrastructure": "1.0.0",
+          "Telegram.Bot": "19.0.0"
+        },
+        "runtime": {
+          "Picker.Application.dll": {}
+        }
+      },
+      "Picker.Domain/1.0.0": {
+        "runtime": {
+          "Picker.Domain.dll": {}
+        }
+      },
       "Picker.Infrastructure/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.6",
@@ -1476,6 +1493,16 @@
       "sha512": "sha512-Q16IOitgjGoaJOuqgKQy0FeF+hr/ncmlX2esrhCC7aiyhSX7roYEriWaGAHkQZR8QzbImjFfl4eQh2IxcnOrPg==",
       "path": "telegram.bot/19.0.0",
       "hashPath": "telegram.bot.19.0.0.nupkg.sha512"
+    },
+    "Picker.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Picker.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Picker.Infrastructure/1.0.0": {
       "type": "project",

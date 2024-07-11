@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/admin/RiderProjects/WebApplication2/Picker.Infrastructure/Picker.Infrastructure.csproj": {}
+    "D:\\projects\\Vilnyy-bot\\Picker.Infrastructure\\Picker.Infrastructure.csproj": {}
   },
   "projects": {
-    "/Users/admin/RiderProjects/WebApplication2/Picker.Infrastructure/Picker.Infrastructure.csproj": {
+    "D:\\projects\\Vilnyy-bot\\Picker.Infrastructure\\Picker.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/admin/RiderProjects/WebApplication2/Picker.Infrastructure/Picker.Infrastructure.csproj",
+        "projectUniqueName": "D:\\projects\\Vilnyy-bot\\Picker.Infrastructure\\Picker.Infrastructure.csproj",
         "projectName": "Picker.Infrastructure",
-        "projectPath": "/Users/admin/RiderProjects/WebApplication2/Picker.Infrastructure/Picker.Infrastructure.csproj",
-        "packagesPath": "/Users/admin/.nuget/packages/",
-        "outputPath": "/Users/admin/RiderProjects/WebApplication2/Picker.Infrastructure/obj/",
+        "projectPath": "D:\\projects\\Vilnyy-bot\\Picker.Infrastructure\\Picker.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Stocm\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\Vilnyy-bot\\Picker.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/admin/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Stocm\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -79,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

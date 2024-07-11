@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YGR7k0avSwV9SwIbazubnyvDKIcYnnsLxqqorhKCYrA=",
+  "Hash": "0MaJIOkV/lwReVVo5gLQBjWBj6npS5Ov+TnVKFisl6E=",
   "Source": "Picker",
   "BasePath": "_content/Picker",
   "Mode": "Default",
@@ -8,19 +8,19 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "Picker/wwwroot",
+      "Name": "Picker\\wwwroot",
       "Source": "Picker",
-      "ContentRoot": "/Users/admin/RiderProjects/WebApplication2/Picker/wwwroot/",
+      "ContentRoot": "D:\\projects\\Vilnyy-bot\\Picker\\wwwroot\\",
       "BasePath": "_content/Picker",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/admin/RiderProjects/WebApplication2/Picker/wwwroot/bot.gif",
+      "Identity": "D:\\projects\\Vilnyy-bot\\Picker\\wwwroot\\bot.gif",
       "SourceId": "Picker",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/admin/RiderProjects/WebApplication2/Picker/wwwroot/",
+      "ContentRoot": "D:\\projects\\Vilnyy-bot\\Picker\\wwwroot\\",
       "BasePath": "_content/Picker",
       "RelativePath": "bot.gif",
       "AssetKind": "All",
@@ -33,7 +33,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/bot.gif"
+      "OriginalItemSpec": "wwwroot\\bot.gif"
     }
   ]
 }

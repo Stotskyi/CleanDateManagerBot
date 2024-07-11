@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using OpenAI.Extensions;
+using Picker.Application.Abstractions;
 using Picker.Application.Services;
 using Picker.Infrastructure.Data;
 using Picker.Infrastructure.Repository;
@@ -23,7 +24,7 @@ builder.Services.AddDbContext<ApplicationContext>(options =>
 builder.Services.AddControllers().AddNewtonsoftJson();
 builder.Services.AddScoped<IUserStateRepository,UserStateRepository>();
 builder.Services.AddScoped<IColiverRepository,ColiverRepository>();
-
+builder.Services.AddScoped<CommandFactory>();
 var dummyConfigurationSection = builder.Configuration.GetSection("Dummy");
 
 builder.Services.AddScoped<UpdateHandlers>();
