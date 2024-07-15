@@ -35,7 +35,7 @@ namespace Picker.Application.Services
         {
             logger.LogInformation("Receive message type: {MessageType}", message.Type);
 
-            if (message.Text is null || !IsRecognizedCommand(message.Text) || !int.TryParse(message.Text, out int number) || number < 1 || number > 31))
+            if (message.Text is null || !IsRecognizedCommand(message.Text) || !int.TryParse(message.Text, out int number) || number < 1 || number > 31)
             {
                 logger.LogInformation("Ignoring unrecognized message: {MessageText}", message?.Text);
                 return;
