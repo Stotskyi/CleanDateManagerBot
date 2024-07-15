@@ -61,9 +61,10 @@ public class ColiverRepository(ApplicationContext context) : IColiverRepository
         var username =  string.Join(Environment.NewLine, usernames);
         return $"Сьогодні драє кухню @{username}";
     }
-    public async Task<(DateOnly startDate, DateOnly currentTime)> CreateCycle(byte count)
+    public async Task<(DateOnly startDate, DateOnly currentTime)> CreateCycle(byte countt)
     {
-        var currentTime = DateOnly.FromDateTime(DateTime.Now).AddDays(2);
+       byte count = 8;
+        var currentTime = DateOnly.FromDateTime(DateTime.Now);
         List<CleaningTime> cleaningTimesToAdd = new List<CleaningTime>();
        
         while (count > 0)
@@ -90,7 +91,7 @@ public class ColiverRepository(ApplicationContext context) : IColiverRepository
     }
     public async Task<string> GetRangeOfDate()
     {
-        DateOnly minDate;
+        DateOnly minDate = DateOnly.FromDateTime(DateTime.Now);
         DateOnly maxDate;
         try
         {
