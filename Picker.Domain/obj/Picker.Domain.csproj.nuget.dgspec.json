@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\projects\\Vilnyy-bot\\Picker.Domain\\Picker.Domain.csproj": {}
+    "D:\\Projects\\Vilnyy-bot\\Picker.Domain\\Picker.Domain.csproj": {}
   },
   "projects": {
-    "D:\\projects\\Vilnyy-bot\\Picker.Domain\\Picker.Domain.csproj": {
+    "D:\\Projects\\Vilnyy-bot\\Picker.Domain\\Picker.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\Vilnyy-bot\\Picker.Domain\\Picker.Domain.csproj",
+        "projectUniqueName": "D:\\Projects\\Vilnyy-bot\\Picker.Domain\\Picker.Domain.csproj",
         "projectName": "Picker.Domain",
-        "projectPath": "D:\\projects\\Vilnyy-bot\\Picker.Domain\\Picker.Domain.csproj",
-        "packagesPath": "C:\\Users\\Stocm\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\Vilnyy-bot\\Picker.Domain\\obj\\",
+        "projectPath": "D:\\Projects\\Vilnyy-bot\\Picker.Domain\\Picker.Domain.csproj",
+        "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Vilnyy-bot\\Picker.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Stocm\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\andri\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

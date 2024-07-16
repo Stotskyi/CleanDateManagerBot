@@ -12,4 +12,5 @@ public sealed class ApplicationContext : DbContext
     public DbSet<Coliver> Colivers { get; set; }
     public DbSet<CleaningTime> CleaningTimes { get; set; }
     public DbSet<UserState> UserStates { get; set; }
+    public DbSet<Cycle> Cycles { get; set; }
 }

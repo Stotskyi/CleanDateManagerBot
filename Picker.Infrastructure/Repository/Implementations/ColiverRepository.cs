@@ -61,10 +61,10 @@ public class ColiverRepository(ApplicationContext context) : IColiverRepository
         var username =  string.Join(Environment.NewLine, usernames);
         return $"Сьогодні драє кухню @{username}";
     }
-    public async Task<(DateOnly startDate, DateOnly currentTime)> CreateCycle(byte countt)
+    public async Task<(DateOnly startDate, DateOnly currentTime)> CreateCycle(byte count)
     {
-       byte count = 8;
         var currentTime = DateOnly.FromDateTime(DateTime.Now);
+        var cycle = await context.CleaningTimes.AsNoTracking().MaxAsync(c => c.Cycle) + 1;
         List<CleaningTime> cleaningTimesToAdd = new List<CleaningTime>();
        
         while (count > 0)
@@ -79,7 +79,7 @@ public class ColiverRepository(ApplicationContext context) : IColiverRepository
                 },
                 _ => (byte)(count - 1)
             };
-            cleaningTimesToAdd.Add(new CleaningTime() { Date = currentTime });
+            cleaningTimesToAdd.Add(new CleaningTime() { Date = currentTime, Cycle = cycle });
             
             if(count is not 0) currentTime = currentTime.AddDays(1);
         }
@@ -140,8 +140,9 @@ public class ColiverRepository(ApplicationContext context) : IColiverRepository
 {
     var cleaningTimes = await context.CleaningTimes
         .Include(ct => ct.Colivers)
+        .Where(c => c.Cycle == context.CleaningTimes.Max(ct => ct.Cycle))
         .ToListAsync();
-
+    
     if (!cleaningTimes.Any()) return null;
 
     var groupedCleaningTimes = cleaningTimes

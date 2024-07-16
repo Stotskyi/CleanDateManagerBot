@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8AZcOG3WdthPy0HqJFcdyEk6sHBhoLWJadaJdSME3rPzR1Lh+Zyb+qMB7obI1J/UTAk46EyYD1egdh1d3lpVUQ==",
+  "dgSpecHash": "OOwvaFKX78BokWR6+fivSumR9AneSICckbOsLj9q5caz6Xd05Wfu5I28kMkEf17JjQu+YQfAhBPCBH6eELlekA==",
   "success": true,
-  "projectFilePath": "D:\\projects\\Vilnyy-bot\\Picker.Domain\\Picker.Domain.csproj",
+  "projectFilePath": "D:\\Projects\\Vilnyy-bot\\Picker.Domain\\Picker.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

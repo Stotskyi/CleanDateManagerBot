@@ -16,7 +16,6 @@ public class BotController(ApplicationContext context,IOptions<BotConfiguration>
     [ValidateTelegramBot]
     public async Task<IActionResult> Post([FromBody] Update update, [FromServices] UpdateHandlers handleUpdateService, CancellationToken cancellationToken)
     {
-        if (update.Message.Text == "HELOO") return Ok("get out of fuck");
         await handleUpdateService.HandleUpdateAsync(update, cancellationToken);
         return Ok();
     }

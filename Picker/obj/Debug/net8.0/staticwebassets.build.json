@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0MaJIOkV/lwReVVo5gLQBjWBj6npS5Ov+TnVKFisl6E=",
+  "Hash": "cPRe5M0dpCvXkaDPH5nrx5LBN9m43jPOWl7H6RuLeLU=",
   "Source": "Picker",
   "BasePath": "_content/Picker",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Picker\\wwwroot",
       "Source": "Picker",
-      "ContentRoot": "D:\\projects\\Vilnyy-bot\\Picker\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Vilnyy-bot\\Picker\\wwwroot\\",
       "BasePath": "_content/Picker",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\projects\\Vilnyy-bot\\Picker\\wwwroot\\bot.gif",
+      "Identity": "D:\\Projects\\Vilnyy-bot\\Picker\\wwwroot\\bot.gif",
       "SourceId": "Picker",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\projects\\Vilnyy-bot\\Picker\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Vilnyy-bot\\Picker\\wwwroot\\",
       "BasePath": "_content/Picker",
       "RelativePath": "bot.gif",
       "AssetKind": "All",

@@ -35,7 +35,7 @@ namespace Picker.Application.Services
         {
             logger.LogInformation("Receive message type: {MessageType}", message.Type);
 
-            if (message.Text is null || !IsRecognizedCommand(message.Text) || !int.TryParse(message.Text, out int number) || number < 1 || number > 31)
+            if (message.Text is null || !IsRecognizedCommand(message.Text))
             {
                 logger.LogInformation("Ignoring unrecognized message: {MessageText}", message?.Text);
                 return;
@@ -56,23 +56,20 @@ namespace Picker.Application.Services
 
         private async Task<string> HandleUserMessage(UserState userState, Message message)
         {
-            var command = commandFactory.GetCommand(message.Text!);
-            if (command != null)
-            {
-                return await command.Execute(userState, message);
-            }
-            
-            if (userState.State == "awaiting_date")
-            {
+            if (userState.State == "awaiting_date") 
                 return await HandleAwaitingDateState(userState, message);
-            }
 
-            if (userState.State == "awaiting_date_to_remove")
-            {
-                return await HandleAwaitingDateToRemoveState(userState, message);
-            }
+            if (userState.State == "awaiting_date_to_remove") 
+                return await HandleAwaitingDateToRemoveState(userState, message); 
+            
+            var command = commandFactory.GetCommand(message.Text!);
+            
+            if (command != null) 
+                return await command.Execute(userState, message);
 
-            return null;
+
+            return "error";
+
         }
         private async Task<string> HandleAwaitingDateState(UserState userState, Message message)
         {

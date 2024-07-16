@@ -9,5 +9,13 @@
       <jdbc-url>jdbc:postgresql://localhost/postgres?password=realspeed20&amp;user=postgres</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="postgres@postgres-server-2024.postgres.database.azure.com" uuid="efa6d880-0e36-4657-a742-3378799943b7">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <configured-by-url>true</configured-by-url>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://postgres-server-2024.postgres.database.azure.com:5432/postgres?password=Realspeed20%21&amp;sslmode=Require&amp;user=andrii</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

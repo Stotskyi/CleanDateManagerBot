@@ -9,7 +9,31 @@ public class GenerateCycleCommand(IColiverRepository coliverRepository) : IComma
 {
     public async Task<string> Execute(UserState userState, Message message)
     {
-        var response = await coliverRepository.CreateCycle(11);
+        var count = ExtractNumber(message.Text!);
+        if (count is 0) return "Цифри навчись писати";
+        
+        var response = await coliverRepository.CreateCycle(count);
         return response.ToString();
     }
+
+    private byte ExtractNumber(string input)
+    {
+        try
+        {
+            var parts = input.Split(" ");
+        
+            // Check if the second part exists
+            if (parts.Length > 1 && byte.TryParse(parts[1], out byte count))
+                return count;
+        }
+        catch (Exception ex)
+        {
+            // Handle or log the exception as needed
+            // For now, just logging to console
+            Console.WriteLine($"Error extracting number: {ex.Message}");
+        }
+    
+        return 0;
+    }
+
 }

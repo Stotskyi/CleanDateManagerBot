@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\projects\\Vilnyy-bot\\Picker\\Picker.csproj": {}
+    "D:\\Projects\\Vilnyy-bot\\Picker\\Picker.csproj": {}
   },
   "projects": {
-    "D:\\projects\\Vilnyy-bot\\Picker.Application\\Picker.Application.csproj": {
+    "D:\\Projects\\Vilnyy-bot\\Picker.Application\\Picker.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\Vilnyy-bot\\Picker.Application\\Picker.Application.csproj",
+        "projectUniqueName": "D:\\Projects\\Vilnyy-bot\\Picker.Application\\Picker.Application.csproj",
         "projectName": "Picker.Application",
-        "projectPath": "D:\\projects\\Vilnyy-bot\\Picker.Application\\Picker.Application.csproj",
-        "packagesPath": "C:\\Users\\Stocm\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\Vilnyy-bot\\Picker.Application\\obj\\",
+        "projectPath": "D:\\Projects\\Vilnyy-bot\\Picker.Application\\Picker.Application.csproj",
+        "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Vilnyy-bot\\Picker.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Stocm\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\andri\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -26,11 +26,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\projects\\Vilnyy-bot\\Picker.Domain\\Picker.Domain.csproj": {
-                "projectPath": "D:\\projects\\Vilnyy-bot\\Picker.Domain\\Picker.Domain.csproj"
+              "D:\\Projects\\Vilnyy-bot\\Picker.Domain\\Picker.Domain.csproj": {
+                "projectPath": "D:\\Projects\\Vilnyy-bot\\Picker.Domain\\Picker.Domain.csproj"
               },
-              "D:\\projects\\Vilnyy-bot\\Picker.Infrastructure\\Picker.Infrastructure.csproj": {
-                "projectPath": "D:\\projects\\Vilnyy-bot\\Picker.Infrastructure\\Picker.Infrastructure.csproj"
+              "D:\\Projects\\Vilnyy-bot\\Picker.Infrastructure\\Picker.Infrastructure.csproj": {
+                "projectPath": "D:\\Projects\\Vilnyy-bot\\Picker.Infrastructure\\Picker.Infrastructure.csproj"
               }
             }
           }
@@ -70,21 +70,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\projects\\Vilnyy-bot\\Picker.Domain\\Picker.Domain.csproj": {
+    "D:\\Projects\\Vilnyy-bot\\Picker.Domain\\Picker.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\Vilnyy-bot\\Picker.Domain\\Picker.Domain.csproj",
+        "projectUniqueName": "D:\\Projects\\Vilnyy-bot\\Picker.Domain\\Picker.Domain.csproj",
         "projectName": "Picker.Domain",
-        "projectPath": "D:\\projects\\Vilnyy-bot\\Picker.Domain\\Picker.Domain.csproj",
-        "packagesPath": "C:\\Users\\Stocm\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\Vilnyy-bot\\Picker.Domain\\obj\\",
+        "projectPath": "D:\\Projects\\Vilnyy-bot\\Picker.Domain\\Picker.Domain.csproj",
+        "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Vilnyy-bot\\Picker.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Stocm\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\andri\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -123,21 +123,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\projects\\Vilnyy-bot\\Picker.Infrastructure\\Picker.Infrastructure.csproj": {
+    "D:\\Projects\\Vilnyy-bot\\Picker.Infrastructure\\Picker.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\Vilnyy-bot\\Picker.Infrastructure\\Picker.Infrastructure.csproj",
+        "projectUniqueName": "D:\\Projects\\Vilnyy-bot\\Picker.Infrastructure\\Picker.Infrastructure.csproj",
         "projectName": "Picker.Infrastructure",
-        "projectPath": "D:\\projects\\Vilnyy-bot\\Picker.Infrastructure\\Picker.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Stocm\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\Vilnyy-bot\\Picker.Infrastructure\\obj\\",
+        "projectPath": "D:\\Projects\\Vilnyy-bot\\Picker.Infrastructure\\Picker.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Vilnyy-bot\\Picker.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Stocm\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\andri\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -202,21 +202,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\projects\\Vilnyy-bot\\Picker\\Picker.csproj": {
+    "D:\\Projects\\Vilnyy-bot\\Picker\\Picker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\Vilnyy-bot\\Picker\\Picker.csproj",
+        "projectUniqueName": "D:\\Projects\\Vilnyy-bot\\Picker\\Picker.csproj",
         "projectName": "Picker",
-        "projectPath": "D:\\projects\\Vilnyy-bot\\Picker\\Picker.csproj",
-        "packagesPath": "C:\\Users\\Stocm\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\Vilnyy-bot\\Picker\\obj\\",
+        "projectPath": "D:\\Projects\\Vilnyy-bot\\Picker\\Picker.csproj",
+        "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Vilnyy-bot\\Picker\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Stocm\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\andri\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -228,11 +228,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\projects\\Vilnyy-bot\\Picker.Application\\Picker.Application.csproj": {
-                "projectPath": "D:\\projects\\Vilnyy-bot\\Picker.Application\\Picker.Application.csproj"
+              "D:\\Projects\\Vilnyy-bot\\Picker.Application\\Picker.Application.csproj": {
+                "projectPath": "D:\\Projects\\Vilnyy-bot\\Picker.Application\\Picker.Application.csproj"
               },
-              "D:\\projects\\Vilnyy-bot\\Picker.Infrastructure\\Picker.Infrastructure.csproj": {
-                "projectPath": "D:\\projects\\Vilnyy-bot\\Picker.Infrastructure\\Picker.Infrastructure.csproj"
+              "D:\\Projects\\Vilnyy-bot\\Picker.Infrastructure\\Picker.Infrastructure.csproj": {
+                "projectPath": "D:\\Projects\\Vilnyy-bot\\Picker.Infrastructure\\Picker.Infrastructure.csproj"
               }
             }
           }
@@ -305,7 +305,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

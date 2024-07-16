@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Picker.Infrastructure.Entities;
 
 public class CleaningTime
@@ -6,4 +8,6 @@ public class CleaningTime
     public DateOnly Date { get; set; }
     
     public List<Coliver>? Colivers { get; set; }
+    
+    public int Cycle { get; set; }
 }
