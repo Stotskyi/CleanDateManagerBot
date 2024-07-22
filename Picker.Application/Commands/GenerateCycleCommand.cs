@@ -21,15 +21,11 @@ public class GenerateCycleCommand(IColiverRepository coliverRepository) : IComma
         try
         {
             var parts = input.Split(" ");
-        
-            // Check if the second part exists
             if (parts.Length > 1 && byte.TryParse(parts[1], out byte count))
                 return count;
         }
         catch (Exception ex)
         {
-            // Handle or log the exception as needed
-            // For now, just logging to console
             Console.WriteLine($"Error extracting number: {ex.Message}");
         }
     

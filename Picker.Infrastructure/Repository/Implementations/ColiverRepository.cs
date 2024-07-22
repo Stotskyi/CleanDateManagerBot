@@ -73,9 +73,8 @@ public class ColiverRepository(ApplicationContext context) : IColiverRepository
             {
                 DayOfWeek.Monday => count switch
                 {
-                    2 => (byte)(count - 2),
                     1 => (byte)(count - 1),
-                    _ => (byte)(count - 3)
+                    _ => (byte)(count - 2)
                 },
                 _ => (byte)(count - 1)
             };
