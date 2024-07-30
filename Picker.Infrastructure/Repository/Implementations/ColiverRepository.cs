@@ -13,12 +13,13 @@ public class ColiverRepository(ApplicationContext context) : IColiverRepository
     {
         if (!int.TryParse(date, out int day)) return "Якусь небилицю ти ввів, роззуй очі і введи як мама вчила";
         if (string.IsNullOrWhiteSpace(username)) return "Відкрий нік дурбецало";
-        
+
+        var maxValue = await context.CleaningTimes
+            .MaxAsync(t => t.Cycle);
+            
         var now = DateTime.Now;
         var times = await context.CleaningTimes
-            .Where(t => t.Date.Day == day
-                        && t.Date.Month == now.Month
-                        && t.Date.Year == now.Year)
+            .Where(t => t.Cycle == maxValue && t.Date.Day == day)
             .Include(cleaningTime => cleaningTime.Colivers)
             .ToListAsync();
 
