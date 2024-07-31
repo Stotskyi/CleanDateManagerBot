@@ -2,9 +2,7 @@ D:\projects\Vilnyy-bot\Picker.Application\bin\Debug\net8.0\Picker.Application.de
 D:\projects\Vilnyy-bot\Picker.Application\bin\Debug\net8.0\Picker.Application.dll
 D:\projects\Vilnyy-bot\Picker.Application\bin\Debug\net8.0\Picker.Application.pdb
 D:\projects\Vilnyy-bot\Picker.Application\bin\Debug\net8.0\Picker.Domain.dll
-D:\projects\Vilnyy-bot\Picker.Application\bin\Debug\net8.0\Picker.Infrastructure.dll
 D:\projects\Vilnyy-bot\Picker.Application\bin\Debug\net8.0\Picker.Domain.pdb
-D:\projects\Vilnyy-bot\Picker.Application\bin\Debug\net8.0\Picker.Infrastructure.pdb
 D:\projects\Vilnyy-bot\Picker.Application\obj\Debug\net8.0\Picker.Application.csproj.AssemblyReference.cache
 D:\projects\Vilnyy-bot\Picker.Application\obj\Debug\net8.0\Picker.Application.GeneratedMSBuildEditorConfig.editorconfig
 D:\projects\Vilnyy-bot\Picker.Application\obj\Debug\net8.0\Picker.Application.AssemblyInfoInputs.cache

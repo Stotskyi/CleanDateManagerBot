@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Picker.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fcb230aa04e0ef66bc6adb088f5015fc759e3cbf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed5927788d3b230fb966416810e384a8f6ab0f3e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Picker.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Picker.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

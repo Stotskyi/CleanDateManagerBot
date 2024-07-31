@@ -266,3 +266,10 @@ D:\projects\Vilnyy-bot\Picker\obj\Debug\net8.0\refint\Picker.dll
 D:\projects\Vilnyy-bot\Picker\obj\Debug\net8.0\Picker.pdb
 D:\projects\Vilnyy-bot\Picker\obj\Debug\net8.0\Picker.genruntimeconfig.cache
 D:\projects\Vilnyy-bot\Picker\obj\Debug\net8.0\ref\Picker.dll
+D:\Projects\Vilnyy-bot\Picker\bin\Debug\net8.0\FluentValidation.dll
+D:\Projects\Vilnyy-bot\Picker\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\Projects\Vilnyy-bot\Picker\bin\Debug\net8.0\MediatR.dll
+D:\Projects\Vilnyy-bot\Picker\bin\Debug\net8.0\MediatR.Contracts.dll
+D:\Projects\Vilnyy-bot\Picker\bin\Debug\net8.0\Serilog.dll
+D:\Projects\Vilnyy-bot\Picker\bin\Debug\net8.0\Picker.Persistence.dll
+D:\Projects\Vilnyy-bot\Picker\bin\Debug\net8.0\Picker.Persistence.pdb

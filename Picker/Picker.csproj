@@ -10,8 +10,8 @@
     <ItemGroup>
         <PackageReference Include="Betalgo.OpenAI" Version="8.3.0" />
         <PackageReference Include="EPPlus" Version="7.1.3" />
-        <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.6" />
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.6">
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.7" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.7">
           <PrivateAssets>all</PrivateAssets>
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
@@ -23,13 +23,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Files\" />
-      <Folder Include="webroot\files\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\Picker.Application\Picker.Application.csproj" />
       <ProjectReference Include="..\Picker.Infrastructure\Picker.Infrastructure.csproj" />
+      <ProjectReference Include="..\Picker.Persistence\Picker.Persistence.csproj" />
     </ItemGroup>
 
     <ItemGroup>

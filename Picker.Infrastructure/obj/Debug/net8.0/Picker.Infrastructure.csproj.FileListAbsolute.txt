@@ -28,3 +28,10 @@ D:\projects\Vilnyy-bot\Picker.Infrastructure\obj\Debug\net8.0\refint\Picker.Infr
 D:\projects\Vilnyy-bot\Picker.Infrastructure\obj\Debug\net8.0\Picker.Infrastructure.pdb
 D:\projects\Vilnyy-bot\Picker.Infrastructure\obj\Debug\net8.0\Picker.Infrastructure.genruntimeconfig.cache
 D:\projects\Vilnyy-bot\Picker.Infrastructure\obj\Debug\net8.0\ref\Picker.Infrastructure.dll
+D:\Projects\Vilnyy-bot\Picker.Infrastructure\bin\Debug\net8.0\Picker.Application.dll
+D:\Projects\Vilnyy-bot\Picker.Infrastructure\bin\Debug\net8.0\Picker.Domain.dll
+D:\Projects\Vilnyy-bot\Picker.Infrastructure\bin\Debug\net8.0\Picker.Persistence.dll
+D:\Projects\Vilnyy-bot\Picker.Infrastructure\bin\Debug\net8.0\Picker.Application.pdb
+D:\Projects\Vilnyy-bot\Picker.Infrastructure\bin\Debug\net8.0\Picker.Persistence.pdb
+D:\Projects\Vilnyy-bot\Picker.Infrastructure\bin\Debug\net8.0\Picker.Domain.pdb
+D:\Projects\Vilnyy-bot\Picker.Infrastructure\obj\Debug\net8.0\Picker.I.CCC7ACD9.Up2Date
