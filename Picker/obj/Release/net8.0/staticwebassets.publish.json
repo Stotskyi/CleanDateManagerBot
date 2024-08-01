@@ -1,11 +1,39 @@
 {
   "Version": 1,
-  "Hash": "PKd1xKVk8Mls6FS+ZFR/vsOrK8rh9Z/U3SbmCsPQFLo=",
+  "Hash": "P6GyNpuanQjJSKWE+uaqHKSwv1XXhPZL9DGDi4+ZmkY=",
   "Source": "Picker",
   "BasePath": "_content/Picker",
   "Mode": "Default",
   "ManifestType": "Publish",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "Picker\\wwwroot",
+      "Source": "Picker",
+      "ContentRoot": "D:\\Projects\\Vilnyy-bot\\Picker\\wwwroot\\",
+      "BasePath": "_content/Picker",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Projects\\Vilnyy-bot\\Picker\\wwwroot\\bot.gif",
+      "SourceId": "Picker",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Vilnyy-bot\\Picker\\wwwroot\\",
+      "BasePath": "_content/Picker",
+      "RelativePath": "bot.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\bot.gif"
+    }
+  ]
 }
