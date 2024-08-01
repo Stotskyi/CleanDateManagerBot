@@ -1,0 +1,16 @@
+D:\Projects\Vilnyy-bot\Picker.Application\bin\Release\net8.0\Picker.Application.deps.json
+D:\Projects\Vilnyy-bot\Picker.Application\bin\Release\net8.0\Picker.Application.dll
+D:\Projects\Vilnyy-bot\Picker.Application\bin\Release\net8.0\Picker.Application.pdb
+D:\Projects\Vilnyy-bot\Picker.Application\bin\Release\net8.0\Picker.Domain.dll
+D:\Projects\Vilnyy-bot\Picker.Application\bin\Release\net8.0\Picker.Domain.pdb
+D:\Projects\Vilnyy-bot\Picker.Application\obj\Release\net8.0\Picker.Application.csproj.AssemblyReference.cache
+D:\Projects\Vilnyy-bot\Picker.Application\obj\Release\net8.0\Picker.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Vilnyy-bot\Picker.Application\obj\Release\net8.0\Picker.Application.AssemblyInfoInputs.cache
+D:\Projects\Vilnyy-bot\Picker.Application\obj\Release\net8.0\Picker.Application.AssemblyInfo.cs
+D:\Projects\Vilnyy-bot\Picker.Application\obj\Release\net8.0\Picker.Application.csproj.CoreCompileInputs.cache
+D:\Projects\Vilnyy-bot\Picker.Application\obj\Release\net8.0\Picker.Application.sourcelink.json
+D:\Projects\Vilnyy-bot\Picker.Application\obj\Release\net8.0\Picker.A.22FA34DF.Up2Date
+D:\Projects\Vilnyy-bot\Picker.Application\obj\Release\net8.0\Picker.Application.dll
+D:\Projects\Vilnyy-bot\Picker.Application\obj\Release\net8.0\refint\Picker.Application.dll
+D:\Projects\Vilnyy-bot\Picker.Application\obj\Release\net8.0\Picker.Application.pdb
+D:\Projects\Vilnyy-bot\Picker.Application\obj\Release\net8.0\ref\Picker.Application.dll
