@@ -63,5 +63,5 @@ jobs:
         with:
           app-name: 'telegram-bot-2024'
           slot-name: 'Production'
-          package: $"{{env.AZURE_WEBAPP_PATH}}"
+          package: .
           
