@@ -16,6 +16,7 @@ public class CommandFactory(IColiverRepository coliverRepository, ITelegramBotCl
             var text when text.StartsWith("/remove") => new RemoveCommand(),
             var text when text.StartsWith("/table") => new TableCommand(coliverRepository, botClient),
             var text when text.StartsWith("/cleaner") => new CleanerCommand(coliverRepository),
-            var text when text.StartsWith("/generateCycle") => new GenerateCycleCommand(coliverRepository)
+            var text when text.StartsWith("/generateCycle") => new GenerateCycleCommand(coliverRepository),
+            _ => null
         };
 }

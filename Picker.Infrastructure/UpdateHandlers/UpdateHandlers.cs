@@ -45,7 +45,7 @@ namespace Picker.Infrastructure.UpdateHandlers
             var userState = await userStateManager.GetUserStateAsync(chatId) 
                             ?? new UserState { UserId = chatId, State = "start" };
 
-            var response = await HandleUserMessage(userState, message);
+            var response = await HandleUserMessage(userState, message,cancellationToken);
 
             if (response is null) return;
 
@@ -55,16 +55,16 @@ namespace Picker.Infrastructure.UpdateHandlers
             await botClient.SendTextMessageAsync(chatId, response, cancellationToken: cancellationToken);
         }
 
-        private async Task<string> HandleUserMessage(UserState userState, Message message)
+        private async Task<string> HandleUserMessage(UserState userState, Message message, CancellationToken cancellationToken)
         {
             return userState.State switch
             {
-                "awaiting_date" => await HandleAwaitingDateState(userState, message),
-                "awaiting_date_to_remove" => await HandleAwaitingDateToRemoveState(userState, message),
-                _ => await ExecuteCommandAsync(userState, message)
+                "awaiting_date" => await HandleAwaitingDateState(userState, message,cancellationToken),
+                "awaiting_date_to_remove" => await HandleAwaitingDateToRemoveState(userState, message,cancellationToken),
+                _ => await ExecuteCommandAsync(userState, message,cancellationToken)
             };
         }
-        private async Task<string> ExecuteCommandAsync(UserState userState, Message message)
+        private async Task<string> ExecuteCommandAsync(UserState userState, Message message,CancellationToken cancellationToken)
         {
             var command = commandFactory.GetCommand(message.Text!);
             if (command != null)
@@ -74,27 +74,27 @@ namespace Picker.Infrastructure.UpdateHandlers
             return "error";
         }
         
-        private async Task<string> HandleAwaitingDateState(UserState userState, Message message)
+        private async Task<string> HandleAwaitingDateState(UserState userState, Message message, CancellationToken cancellationToken)
         {
             userState.State = "start";
             var day = message.Text;
-            string username = await GetUsername(message);
+            string username = await GetUsername(message,cancellationToken);
 
             var result = await coliverRepository.WriteColiverAsync(day, username);
             return result;
         }
 
-        private async Task<string> HandleAwaitingDateToRemoveState(UserState userState, Message message)
+        private async Task<string> HandleAwaitingDateToRemoveState(UserState userState, Message message, CancellationToken cancellationToken)
         {
             userState.State = "start";
             var day = message.Text;
-            string username = await GetUsername(message);
+            string username = await GetUsername(message,cancellationToken);
 
             var result = await coliverRepository.RemoveFromTable(day, username);
             return result;
         }
 
-        private async Task<string> GetUsername(Message message)
+        private async Task<string> GetUsername(Message message, CancellationToken cancellationToken)
         {
             if (message.Chat.Type == Telegram.Bot.Types.Enums.ChatType.Private)
             {
