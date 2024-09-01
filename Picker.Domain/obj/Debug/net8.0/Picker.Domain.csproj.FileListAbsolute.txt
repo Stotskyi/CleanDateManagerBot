@@ -10,3 +10,15 @@ D:\projects\Vilnyy-bot\Picker.Domain\obj\Debug\net8.0\Picker.Domain.dll
 D:\projects\Vilnyy-bot\Picker.Domain\obj\Debug\net8.0\refint\Picker.Domain.dll
 D:\projects\Vilnyy-bot\Picker.Domain\obj\Debug\net8.0\Picker.Domain.pdb
 D:\projects\Vilnyy-bot\Picker.Domain\obj\Debug\net8.0\ref\Picker.Domain.dll
+C:\Users\38050\RiderProjects\CleanDateManagerBot\Picker.Domain\bin\Debug\net8.0\Picker.Domain.deps.json
+C:\Users\38050\RiderProjects\CleanDateManagerBot\Picker.Domain\bin\Debug\net8.0\Picker.Domain.dll
+C:\Users\38050\RiderProjects\CleanDateManagerBot\Picker.Domain\bin\Debug\net8.0\Picker.Domain.pdb
+C:\Users\38050\RiderProjects\CleanDateManagerBot\Picker.Domain\obj\Debug\net8.0\Picker.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\38050\RiderProjects\CleanDateManagerBot\Picker.Domain\obj\Debug\net8.0\Picker.Domain.AssemblyInfoInputs.cache
+C:\Users\38050\RiderProjects\CleanDateManagerBot\Picker.Domain\obj\Debug\net8.0\Picker.Domain.AssemblyInfo.cs
+C:\Users\38050\RiderProjects\CleanDateManagerBot\Picker.Domain\obj\Debug\net8.0\Picker.Domain.csproj.CoreCompileInputs.cache
+C:\Users\38050\RiderProjects\CleanDateManagerBot\Picker.Domain\obj\Debug\net8.0\Picker.Domain.sourcelink.json
+C:\Users\38050\RiderProjects\CleanDateManagerBot\Picker.Domain\obj\Debug\net8.0\Picker.Domain.dll
+C:\Users\38050\RiderProjects\CleanDateManagerBot\Picker.Domain\obj\Debug\net8.0\refint\Picker.Domain.dll
+C:\Users\38050\RiderProjects\CleanDateManagerBot\Picker.Domain\obj\Debug\net8.0\Picker.Domain.pdb
+C:\Users\38050\RiderProjects\CleanDateManagerBot\Picker.Domain\obj\Debug\net8.0\ref\Picker.Domain.dll

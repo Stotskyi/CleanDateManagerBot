@@ -3126,19 +3126,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\andri\\.nuget\\packages\\": {}
+    "C:\\Users\\38050\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\Vilnyy-bot\\Picker.Persistence\\Picker.Persistence.csproj",
+      "projectUniqueName": "C:\\Users\\38050\\RiderProjects\\CleanDateManagerBot\\Picker.Persistence\\Picker.Persistence.csproj",
       "projectName": "Picker.Persistence",
-      "projectPath": "D:\\Projects\\Vilnyy-bot\\Picker.Persistence\\Picker.Persistence.csproj",
-      "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\Vilnyy-bot\\Picker.Persistence\\obj\\",
+      "projectPath": "C:\\Users\\38050\\RiderProjects\\CleanDateManagerBot\\Picker.Persistence\\Picker.Persistence.csproj",
+      "packagesPath": "C:\\Users\\38050\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\38050\\RiderProjects\\CleanDateManagerBot\\Picker.Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\andri\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\38050\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -3150,8 +3150,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Projects\\Vilnyy-bot\\Picker.Application\\Picker.Application.csproj": {
-              "projectPath": "D:\\Projects\\Vilnyy-bot\\Picker.Application\\Picker.Application.csproj"
+            "C:\\Users\\38050\\RiderProjects\\CleanDateManagerBot\\Picker.Application\\Picker.Application.csproj": {
+              "projectPath": "C:\\Users\\38050\\RiderProjects\\CleanDateManagerBot\\Picker.Application\\Picker.Application.csproj"
             }
           }
         }
@@ -3205,7 +3205,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
