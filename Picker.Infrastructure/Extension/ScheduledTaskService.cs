@@ -10,10 +10,8 @@ namespace Picker.Infrastructure.Extension;
 
 public class ScheduledTaskService(
     ILogger<ScheduledTaskService> logger,
-    IServiceProvider serviceProvider,
-    IBackgroundJobClient backgroundJobClient) : IHostedService
+    IServiceProvider serviceProvider) : IHostedService
 {
-    private readonly IBackgroundJobClient _backgroundJobClient = backgroundJobClient;
     public async Task PokrychOfDay()
     {
         using var scope = serviceProvider.CreateScope();
@@ -44,8 +42,8 @@ public class ScheduledTaskService(
     
     public async Task StartAsync(CancellationToken cancellationToken)
     {
-        //RecurringJob.AddOrUpdate("Cleaner", () => Cleaner(), "0 9 * * *");
-      //  RecurringJob.AddOrUpdate("Pokrych", () => PokrychOfDay(), "0 9 * * *");
+        RecurringJob.AddOrUpdate("Cleaner", () => Cleaner(), "0 9 * * *");
+        RecurringJob.AddOrUpdate("Pokrych", () => PokrychOfDay(), "0 9 * * *");
     }
 
     public Task StopAsync(CancellationToken cancellationToken)
