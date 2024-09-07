@@ -5013,19 +5013,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\38050\\.nuget\\packages\\": {}
+    "C:\\Users\\andri\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\38050\\RiderProjects\\CleanDateManagerBot\\Picker\\Picker.csproj",
+      "projectUniqueName": "D:\\Projects\\Vilnyy-bot\\Picker\\Picker.csproj",
       "projectName": "Picker",
-      "projectPath": "C:\\Users\\38050\\RiderProjects\\CleanDateManagerBot\\Picker\\Picker.csproj",
-      "packagesPath": "C:\\Users\\38050\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\38050\\RiderProjects\\CleanDateManagerBot\\Picker\\obj\\",
+      "projectPath": "D:\\Projects\\Vilnyy-bot\\Picker\\Picker.csproj",
+      "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\Vilnyy-bot\\Picker\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\38050\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\andri\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -5037,14 +5037,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\38050\\RiderProjects\\CleanDateManagerBot\\Picker.Application\\Picker.Application.csproj": {
-              "projectPath": "C:\\Users\\38050\\RiderProjects\\CleanDateManagerBot\\Picker.Application\\Picker.Application.csproj"
+            "D:\\Projects\\Vilnyy-bot\\Picker.Application\\Picker.Application.csproj": {
+              "projectPath": "D:\\Projects\\Vilnyy-bot\\Picker.Application\\Picker.Application.csproj"
             },
-            "C:\\Users\\38050\\RiderProjects\\CleanDateManagerBot\\Picker.Infrastructure\\Picker.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\38050\\RiderProjects\\CleanDateManagerBot\\Picker.Infrastructure\\Picker.Infrastructure.csproj"
+            "D:\\Projects\\Vilnyy-bot\\Picker.Infrastructure\\Picker.Infrastructure.csproj": {
+              "projectPath": "D:\\Projects\\Vilnyy-bot\\Picker.Infrastructure\\Picker.Infrastructure.csproj"
             },
-            "C:\\Users\\38050\\RiderProjects\\CleanDateManagerBot\\Picker.Persistence\\Picker.Persistence.csproj": {
-              "projectPath": "C:\\Users\\38050\\RiderProjects\\CleanDateManagerBot\\Picker.Persistence\\Picker.Persistence.csproj"
+            "D:\\Projects\\Vilnyy-bot\\Picker.Persistence\\Picker.Persistence.csproj": {
+              "projectPath": "D:\\Projects\\Vilnyy-bot\\Picker.Persistence\\Picker.Persistence.csproj"
             }
           }
         }
@@ -5117,7 +5117,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
