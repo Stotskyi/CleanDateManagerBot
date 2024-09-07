@@ -1864,6 +1864,7 @@
           "Hangfire.PostgreSql": "1.20.9",
           "Microsoft.EntityFrameworkCore": "8.0.7",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Logging.ApplicationInsights": "2.22.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.4",
           "Picker.Application": "1.0.0",
           "SkiaSharp": "2.88.8"

@@ -1,4 +1,5 @@
 using Hangfire;
+using Microsoft.Extensions.Logging.AzureAppServices;
 using OpenAI.Extensions;
 using Picker.Application;
 using Picker.Application.Services;
@@ -14,6 +15,13 @@ builder.Services.AddApplication();
 builder.Services.AddPersistence(builder.Configuration);
 builder.Services.AddInfrastructure(builder.Configuration);
 
+builder.Logging.AddAzureWebAppDiagnostics();
+builder.Services.Configure<AzureFileLoggerOptions>(options =>
+{
+    options.FileName = "logs-";
+    options.FileSizeLimit = 50 * 1024;
+    options.RetainedFileCountLimit = 5;
+});
 var botConfigurationSection = builder.Configuration.GetSection(BotConfiguration.Configuration);
 builder.Services.Configure<BotConfiguration>(botConfigurationSection);
 var botConfiguration = botConfigurationSection.Get<BotConfiguration>();
@@ -40,8 +48,8 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.UseHangfireDashboard();
-app.UseHangfireServer();
+//app.UseHangfireDashboard();
+//app.UseHangfireServer();
 
 
 app.Run();

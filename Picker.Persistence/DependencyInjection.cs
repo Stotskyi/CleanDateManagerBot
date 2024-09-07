@@ -26,13 +26,13 @@ public static class DependencyInjection
         services.AddScoped<ICommandFactory, CommandFactory.CommandFactory>();
         
         
-        services.AddHangfireServer(x => x.SchedulePollingInterval = TimeSpan.FromSeconds(1));
+     //   services.AddHangfireServer(x => x.SchedulePollingInterval = TimeSpan.FromSeconds(1));
 
-        services.AddHangfire(x =>
+        /*services.AddHangfire(x =>
                 x.UseSimpleAssemblyNameTypeSerializer()
                     .UseRecommendedSerializerSettings()
                     .UsePostgreSqlStorage(configuration.GetConnectionString(("hangfire"))))
-            ;
+            ;*/
         
 
         services.AddScoped<IUserRepository, UserRepository>();

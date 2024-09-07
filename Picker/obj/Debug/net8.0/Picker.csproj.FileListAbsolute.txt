@@ -278,3 +278,4 @@ D:\Projects\Vilnyy-bot\Picker\bin\Debug\net8.0\Hangfire.AspNetCore.dll
 D:\Projects\Vilnyy-bot\Picker\bin\Debug\net8.0\Hangfire.Core.dll
 D:\Projects\Vilnyy-bot\Picker\bin\Debug\net8.0\Hangfire.NetCore.dll
 D:\Projects\Vilnyy-bot\Picker\bin\Debug\net8.0\Hangfire.PostgreSql.dll
+D:\Projects\Vilnyy-bot\Picker\bin\Debug\net8.0\appsettings.Production.json

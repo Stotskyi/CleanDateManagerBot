@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ThlRPebdS8EKuugwY8N/x+tYc0n2v3QcvzocgUWT8u2trXOnICrg3Ct+4cjsyl7VCQNjHCe7y2vqUKlLFLy0ng==",
+  "dgSpecHash": "hyWHaVOvdkWv3QeHswRUSV4v+iaLqc+k8DA6ti4+52cl06bXR24cqm0XJ6AJtxxOx9kMJKneMR4kdxjeQkwMNg==",
   "success": true,
   "projectFilePath": "D:\\Projects\\Vilnyy-bot\\Picker.Persistence\\Picker.Persistence.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,7 @@
     "C:\\Users\\andri\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\andri\\.nuget\\packages\\mediatr\\12.4.0\\mediatr.12.4.0.nupkg.sha512",
     "C:\\Users\\andri\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\andri\\.nuget\\packages\\microsoft.applicationinsights\\2.22.0\\microsoft.applicationinsights.2.22.0.nupkg.sha512",
     "C:\\Users\\andri\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\andri\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
     "C:\\Users\\andri\\.nuget\\packages\\microsoft.codeanalysis.common\\4.5.0\\microsoft.codeanalysis.common.4.5.0.nupkg.sha512",
@@ -41,6 +42,7 @@
     "C:\\Users\\andri\\.nuget\\packages\\microsoft.extensions.http\\8.0.0\\microsoft.extensions.http.8.0.0.nupkg.sha512",
     "C:\\Users\\andri\\.nuget\\packages\\microsoft.extensions.logging\\8.0.0\\microsoft.extensions.logging.8.0.0.nupkg.sha512",
     "C:\\Users\\andri\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\andri\\.nuget\\packages\\microsoft.extensions.logging.applicationinsights\\2.22.0\\microsoft.extensions.logging.applicationinsights.2.22.0.nupkg.sha512",
     "C:\\Users\\andri\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
     "C:\\Users\\andri\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\8.0.0\\microsoft.extensions.options.configurationextensions.8.0.0.nupkg.sha512",
     "C:\\Users\\andri\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
