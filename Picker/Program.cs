@@ -1,5 +1,7 @@
+using Hangfire;
 using OpenAI.Extensions;
 using Picker.Application;
+using Picker.Application.Services;
 using Picker.Infrastructure;
 using Picker.Infrastructure.Extension;
 using Picker.Persistence;
@@ -37,5 +39,9 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseHangfireDashboard();
+app.UseHangfireServer();
+
 
 app.Run();

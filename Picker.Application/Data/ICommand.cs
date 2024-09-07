@@ -7,3 +7,8 @@ public interface ICommand
 {
     Task<string> Execute(UserState userState, Message message);
 }
+
+public interface IScheduleCommand
+{
+    Task<string> Execute();
+}

@@ -273,3 +273,8 @@ D:\Projects\Vilnyy-bot\Picker\bin\Debug\net8.0\MediatR.Contracts.dll
 D:\Projects\Vilnyy-bot\Picker\bin\Debug\net8.0\Serilog.dll
 D:\Projects\Vilnyy-bot\Picker\bin\Debug\net8.0\Picker.Persistence.dll
 D:\Projects\Vilnyy-bot\Picker\bin\Debug\net8.0\Picker.Persistence.pdb
+D:\Projects\Vilnyy-bot\Picker\bin\Debug\net8.0\Dapper.dll
+D:\Projects\Vilnyy-bot\Picker\bin\Debug\net8.0\Hangfire.AspNetCore.dll
+D:\Projects\Vilnyy-bot\Picker\bin\Debug\net8.0\Hangfire.Core.dll
+D:\Projects\Vilnyy-bot\Picker\bin\Debug\net8.0\Hangfire.NetCore.dll
+D:\Projects\Vilnyy-bot\Picker\bin\Debug\net8.0\Hangfire.PostgreSql.dll

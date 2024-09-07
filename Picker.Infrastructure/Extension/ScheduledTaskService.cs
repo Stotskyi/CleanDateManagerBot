@@ -1,38 +1,55 @@
-/*using Microsoft.Extensions.Logging;
-using Picker.Infrastructure.Repository.Interfaces;
+using System.Security.Cryptography;
+using Hangfire;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using Picker.Application.Services;
+using Telegram.Bot;
 
-namespace WebApplication2.Services;
+namespace Picker.Infrastructure.Extension;
 
-public class ScheduledTaskService(ILogger<ScheduledTaskService> logger,IColiverRepository coliverRepository) 
+public class ScheduledTaskService(
+    ILogger<ScheduledTaskService> logger,
+    IServiceProvider serviceProvider,
+    IBackgroundJobClient backgroundJobClient) : IHostedService
 {
-    private Timer _timer;
-
-    protected Task ExecuteAsync(CancellationToken stoppingToken)
+    private readonly IBackgroundJobClient _backgroundJobClient = backgroundJobClient;
+    public async Task PokrychOfDay()
     {
-        var now = DateTime.Now;
-        var scheduledTime = DateTime.Today.AddHours(9); // 9 AM
-
-        if (now > scheduledTime)
-        {
-            scheduledTime = scheduledTime.AddDays(1);
-        }
-
-        var initialDelay = scheduledTime - now;
-
-        _timer = new Timer(DoWork, null, initialDelay, TimeSpan.FromHours(24));
-        return Task.CompletedTask;
-    }
-
-    private void DoWork(object state)
-    {
-        logger.LogInformation("Scheduled task running at: {time}", DateTimeOffset.Now);
-        YourMethod();
-    }
-
-    private void YourMethod()
-    {
+        using var scope = serviceProvider.CreateScope();
+        var commandFactory = scope.ServiceProvider.GetRequiredService<ICommandFactory>();
         
-        logger.LogInformation("YourMethod was called.");
+        using var scope1 = serviceProvider.CreateScope();
+        var botClient = scope1.ServiceProvider.GetRequiredService<ITelegramBotClient>();
+
+        
+        var job = commandFactory.GetScheduleCommand("pokruch");
+        var message = await job.Execute();
+        await botClient.SendTextMessageAsync(-1001807080149,message);
     }
     
-}*/
+    public async Task Cleaner()
+    {
+        using var scope = serviceProvider.CreateScope();
+        var commandFactory = scope.ServiceProvider.GetRequiredService<ICommandFactory>();
+        
+        using var scope1 = serviceProvider.CreateScope();
+        var botClient = scope1.ServiceProvider.GetRequiredService<ITelegramBotClient>();
+
+        
+        var job = commandFactory.GetScheduleCommand("/cleaner");
+        var message = await job.Execute();
+        await botClient.SendTextMessageAsync(-1001807080149,message);
+    }
+    
+    public async Task StartAsync(CancellationToken cancellationToken)
+    {
+        RecurringJob.AddOrUpdate("Cleaner", () => Cleaner(), "0 9 * * *");
+        RecurringJob.AddOrUpdate("Pokrych", () => PokrychOfDay(), "0 9 * * *");
+    }
+
+    public Task StopAsync(CancellationToken cancellationToken)
+    {
+        return Task.CompletedTask;
+    }
+}

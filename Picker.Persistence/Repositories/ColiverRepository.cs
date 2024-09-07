@@ -12,12 +12,12 @@ public class ColiverRepository(ApplicationContext context) : IColiverRepository
     {
         if (!int.TryParse(date, out int day)) return "Якусь небилицю ти ввів, роззуй очі і введи як мама вчила";
 
-        var maxValue = await context.CleaningTimes
+        var cycle = await context.CleaningTimes
             .MaxAsync(t => t.Cycle);
 
         var now = DateTime.Now;
         var times = await context.CleaningTimes
-            .Where(t => t.Cycle == maxValue && t.Date.Day == day)
+            .Where(t => t.Cycle == cycle && t.Date.Day == day)
             .Include(cleaningTime => cleaningTime.Colivers)
             .ToListAsync();
 
