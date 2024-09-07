@@ -11,7 +11,8 @@ public class TableCommand(IColiverRepository coliverRepository, ITelegramBotClie
     public async Task<string> Execute(UserState userState, Message message)
     {
         var imageData = await coliverRepository.GetCleanersTable();
-        
+
+        if (imageData is null) return "німа";
         await botClient.SendChatActionAsync(message.Chat, ChatAction.UploadPhoto);
 
         await using var memoryStream = new MemoryStream(imageData);

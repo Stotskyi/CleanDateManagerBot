@@ -68,7 +68,8 @@ public class ColiverRepository(ApplicationContext context) : IColiverRepository
     public async Task<(DateOnly startDate, DateOnly currentTime)> CreateCycle(byte count)
     {
         var currentTime = DateOnly.FromDateTime(DateTime.Now);
-        var cycle = await context.CleaningTimes.AsNoTracking().MaxAsync(c => c.Cycle) + 1;
+        var maxValue = await context.CleaningTimes.MaxAsync(t => t.Cycle) + 1;
+        
         List<CleaningTime> cleaningTimesToAdd = new List<CleaningTime>();
 
         while (count > 0)
@@ -82,12 +83,13 @@ public class ColiverRepository(ApplicationContext context) : IColiverRepository
                 },
                 _ => (byte)(count - 1)
             };
-            cleaningTimesToAdd.Add(new CleaningTime() { Date = currentTime, Cycle = cycle });
+            cleaningTimesToAdd.Add(new CleaningTime() { Date = currentTime, Cycle = maxValue });
 
             if (count is not 0) currentTime = currentTime.AddDays(1);
         }
 
         await context.CleaningTimes.AddRangeAsync(cleaningTimesToAdd);
+        await context.CleaningTimes.Where(c => c.Cycle == maxValue - 1).ExecuteDeleteAsync();
         await context.SaveChangesAsync();
 
         return (DateOnly.FromDateTime(DateTime.Now), currentTime);
@@ -124,9 +126,10 @@ public class ColiverRepository(ApplicationContext context) : IColiverRepository
             if (coliverToRemove != null)
             {
                 time.Colivers.Remove(coliverToRemove);
+                context.Colivers.Remove(coliverToRemove);
             }
         }
-
+   
         await context.SaveChangesAsync();
         return "делітнув";
     }

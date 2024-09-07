@@ -44,8 +44,8 @@ public class ScheduledTaskService(
     
     public async Task StartAsync(CancellationToken cancellationToken)
     {
-        RecurringJob.AddOrUpdate("Cleaner", () => Cleaner(), "0 9 * * *");
-        RecurringJob.AddOrUpdate("Pokrych", () => PokrychOfDay(), "0 9 * * *");
+        //RecurringJob.AddOrUpdate("Cleaner", () => Cleaner(), "0 9 * * *");
+      //  RecurringJob.AddOrUpdate("Pokrych", () => PokrychOfDay(), "0 9 * * *");
     }
 
     public Task StopAsync(CancellationToken cancellationToken)

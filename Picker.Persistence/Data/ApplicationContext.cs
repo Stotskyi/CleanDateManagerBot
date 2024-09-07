@@ -13,13 +13,9 @@ public sealed  class ApplicationContext : DbContext, IApplicationDbContext, IUni
        
     }
     
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApplicationContext).Assembly);
-    }
-    
     public DbSet<Coliver> Colivers { get; set; }
     public DbSet<CleaningTime> CleaningTimes { get; set; }
     public DbSet<UserState> UserStates { get; set; }
     public DbSet<Cycle> Cycles { get; set; }
+    public DbSet<User> Users { get; set; }
 }

@@ -14,5 +14,7 @@ public interface IApplicationDbContext
     public DbSet<UserState> UserStates { get; set; }
     public DbSet<Cycle> Cycles { get; set; }
     
+    public DbSet<User> Users { get; set; }
+    
     Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
 }

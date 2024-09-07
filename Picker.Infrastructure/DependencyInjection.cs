@@ -3,8 +3,10 @@ using Hangfire.PostgreSql;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Picker.Application.Services;
+using Picker.Domain.Entities.Users;
 using Picker.Infrastructure.Extension;
 using Picker.Infrastructure.UpdateHandlers;
+using Picker.Persistence.Repositories;
 using Telegram.Bot;
 using WebApplication2.Models;
 
@@ -30,19 +32,10 @@ public static class DependencyInjection
                 TelegramBotClientOptions options = new(botConfig.BotToken);
                 return new TelegramBotClient(options, httpClient);
             });
-
-        services.AddHangfireServer(x => x.SchedulePollingInterval = TimeSpan.FromSeconds(1));
-
-        services.AddHangfire(x =>
-            x.UseSimpleAssemblyNameTypeSerializer()
-                .UseRecommendedSerializerSettings()
-                .UsePostgreSqlStorage(configuration.GetConnectionString(("hangfire"))))
-                ;
         services.AddScoped<UpdateHandlers.UpdateHandlers>();
         services.AddScoped<IMessageHandler, MessageHandler>();
         
         services.AddHostedService<ScheduledTaskService>();
-   
         return services;
     }
 }

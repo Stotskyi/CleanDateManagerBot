@@ -1,4 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Hangfire;
+using Hangfire.PostgreSql;
+using Hangfire.Server;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Picker.Application.Services;
@@ -21,6 +24,19 @@ public static class DependencyInjection
         services.AddScoped<IUserStateRepository,UserStateRepository>();
         services.AddScoped<IColiverRepository,ColiverRepository>();
         services.AddScoped<ICommandFactory, CommandFactory.CommandFactory>();
+        
+        
+        services.AddHangfireServer(x => x.SchedulePollingInterval = TimeSpan.FromSeconds(1));
+
+        services.AddHangfire(x =>
+                x.UseSimpleAssemblyNameTypeSerializer()
+                    .UseRecommendedSerializerSettings()
+                    .UsePostgreSqlStorage(configuration.GetConnectionString(("hangfire"))))
+            ;
+        
+
+        services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<UserService>();
         
         return services;
     }

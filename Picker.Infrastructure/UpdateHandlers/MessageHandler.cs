@@ -9,7 +9,6 @@ namespace Picker.Infrastructure.UpdateHandlers;
 public class MessageHandler(ILogger<MessageHandler> logger, ITelegramBotClient botClient, IUserStateRepository userStateManager, ICommandFactory commandFactory, IColiverRepository coliverRepository)
     : IMessageHandler
 {
-    private readonly ILogger<MessageHandler> logger = logger;
     private readonly ITelegramBotClient botClient = botClient;
     private readonly IUserStateRepository userStateManager = userStateManager;
     private readonly ICommandFactory commandFactory = commandFactory;
@@ -28,7 +27,11 @@ public class MessageHandler(ILogger<MessageHandler> logger, ITelegramBotClient b
     private async Task BotOnMessageReceived(Message message, CancellationToken cancellationToken)
     {
         logger.LogInformation("Receive message type: {MessageType}", message.Type);
-        
+        if (message.Text is null || !IsRecognizedCommand(message.Text))
+        {
+            return;
+        }
+
         var chatId = message.Chat.Id;
         var userState = await userStateManager.GetUserStateAsync(chatId) 
                         ?? new UserState { UserId = chatId, State = "start" };
@@ -58,11 +61,25 @@ public class MessageHandler(ILogger<MessageHandler> logger, ITelegramBotClient b
     private async Task<string> ExecuteCommandAsync(UserState userState, Message message,CancellationToken cancellationToken)
     {
         var command = commandFactory.GetCommand(message.Text!);
-        
+        var scheduleCommand = commandFactory.GetScheduleCommand(message.Text!);
+        var dickCommand = commandFactory.GetDickCommand(message.Text!);
+        var username = await GetUsername(message,cancellationToken);
+
+        if (dickCommand is not null)
+        {
+            return await dickCommand.Execute(username);
+        }
+    
+        if (scheduleCommand is not null)
+        {
+            return await scheduleCommand.Execute();
+        }
+
         if (command is not null)
         {
             return await command.Execute(userState, message);
         }
+
         return "error";
     }
         
@@ -104,6 +121,8 @@ public class MessageHandler(ILogger<MessageHandler> logger, ITelegramBotClient b
                || text.StartsWith("/generateCycle")
                || text.StartsWith("/remove")
                || text.StartsWith("/pokruch")
+               || text.StartsWith("/dick")
+               || text.StartsWith("/stats")
                || int.TryParse(text, out int day);
     }
 }

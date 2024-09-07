@@ -3,11 +3,12 @@ using Picker.Application.Data;
 using Picker.Application.Services;
 using Picker.Domain.Entities.Users;
 using Picker.Persistence.CommandFactory.Commands;
+using Picker.Persistence.Repositories;
 using Telegram.Bot;
 
 namespace Picker.Persistence.CommandFactory;
 
-public class CommandFactory(IColiverRepository coliverRepository, ITelegramBotClient botClient) : ICommandFactory
+public class CommandFactory(IColiverRepository coliverRepository, ITelegramBotClient botClient,UserService userService) : ICommandFactory
 {
     public ICommand? GetCommand(string message) =>
         message switch
@@ -23,7 +24,16 @@ public class CommandFactory(IColiverRepository coliverRepository, ITelegramBotCl
         message switch
         {
             var text when text is "pokruch" => new PokruchCommand(),
+            var text when text.StartsWith("/stats") => new DickRatingCommand(userService),
             var text when text.StartsWith("/cleaner") => new CleanerCommand(coliverRepository),
-            _ => throw new ArgumentOutOfRangeException(nameof(message), message, null)
+            _ => null
         };
+
+    public IDickCommand GetDickCommand(string message) =>
+        message switch
+        {
+            var text when text.StartsWith("/dick") => new DickCommand(userService),
+            _ => null
+        };
+    
 }
