@@ -1,4 +1,5 @@
 using Hangfire;
+using Hangfire.Dashboard;
 using Microsoft.Extensions.Logging.AzureAppServices;
 using OpenAI.Extensions;
 using Picker.Application;
@@ -48,7 +49,25 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.UseHangfireDashboard();
+app.UseHangfireDashboard("/hangfire", new DashboardOptions
+{
+    Authorization = new[] { new Hangfire.Dashboard.BasicAuthAuthorizationFilter(
+        new Hangfire.Dashboard.BasicAuthAuthorizationFilterOptions
+        {
+            RequireSsl = true, 
+            SslRedirect = false,
+            LoginCaseSensitive = false,
+            Users = new []
+            {
+                new BasicAuthAuthorizationUser
+                {
+                    Login = "admin",
+                    PasswordClear = "password"
+                }
+            }
+        })
+    }
+});
 app.UseHangfireServer();
 
 
