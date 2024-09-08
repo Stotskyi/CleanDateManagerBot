@@ -266,3 +266,9 @@ D:\Projects\Vilnyy-bot\Picker\obj\Release\net8.0\refint\Picker.dll
 D:\Projects\Vilnyy-bot\Picker\obj\Release\net8.0\Picker.pdb
 D:\Projects\Vilnyy-bot\Picker\obj\Release\net8.0\Picker.genruntimeconfig.cache
 D:\Projects\Vilnyy-bot\Picker\obj\Release\net8.0\ref\Picker.dll
+D:\Projects\Vilnyy-bot\Picker\bin\Release\net8.0\appsettings.Production.json
+D:\Projects\Vilnyy-bot\Picker\bin\Release\net8.0\Dapper.dll
+D:\Projects\Vilnyy-bot\Picker\bin\Release\net8.0\Hangfire.AspNetCore.dll
+D:\Projects\Vilnyy-bot\Picker\bin\Release\net8.0\Hangfire.Core.dll
+D:\Projects\Vilnyy-bot\Picker\bin\Release\net8.0\Hangfire.NetCore.dll
+D:\Projects\Vilnyy-bot\Picker\bin\Release\net8.0\Hangfire.PostgreSql.dll

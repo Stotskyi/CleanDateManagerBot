@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Picker.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed8f8dbe4d3118981a600d76c8aa138fc4a2b1ad")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d25375955cfe9c7ccd2e11aae0ea6cd2fbe81a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Picker.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Picker.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

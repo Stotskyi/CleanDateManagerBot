@@ -3,12 +3,14 @@ using Hangfire.Dashboard;
 using Microsoft.Extensions.Logging.AzureAppServices;
 using OpenAI.Extensions;
 using Picker.Application;
-using Picker.Application.Services;
 using Picker.Infrastructure;
 using Picker.Infrastructure.Extension;
 using Picker.Persistence;
 using WebApplication2.Controllers;
 using WebApplication2.Models;
+using BasicAuthAuthorizationFilter = Hangfire.Dashboard.BasicAuthorization.BasicAuthAuthorizationFilter;
+using BasicAuthAuthorizationFilterOptions = Hangfire.Dashboard.BasicAuthorization.BasicAuthAuthorizationFilterOptions;
+using BasicAuthAuthorizationUser = Hangfire.Dashboard.BasicAuthorization.BasicAuthAuthorizationUser;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -58,7 +60,7 @@ app.UseHangfireDashboard("/hangfire", new DashboardOptions
         LoginCaseSensitive = true,
         Users = new []
         {
-            new BasicAuthAuthorizationUser
+            new BasicAuthAuthorizationUser()
             {
                 Login = "admin",  
                 PasswordClear = "admin"  

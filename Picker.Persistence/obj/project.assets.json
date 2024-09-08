@@ -78,6 +78,23 @@
           }
         }
       },
+      "Hangfire.Dashboard.Authorization/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Hangfire.Core": "1.6.0",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Hangfire.Dashboard.Authorization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Hangfire.Dashboard.Authorization.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Hangfire.NetCore/1.8.14": {
         "type": "package",
         "dependencies": {
@@ -959,6 +976,15 @@
           }
         }
       },
+      "Owin/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Owin.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Owin.dll": {}
+        }
+      },
       "Serilog/4.0.1": {
         "type": "package",
         "compile": {
@@ -1465,6 +1491,22 @@
         "lib/netstandard1.3/Hangfire.Core.xml",
         "lib/netstandard2.0/Hangfire.Core.dll",
         "lib/netstandard2.0/Hangfire.Core.xml"
+      ]
+    },
+    "Hangfire.Dashboard.Authorization/3.1.0": {
+      "sha512": "WSCTw2szdv01arMPRcrzoL56MvooA5+miXlH4xNDJayDNO1fQ1LntHIwl1rMXvrYKfrZhQD46NsxkUggyCxfWw==",
+      "type": "package",
+      "path": "hangfire.dashboard.authorization/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "hangfire.dashboard.authorization.3.1.0.nupkg.sha512",
+        "hangfire.dashboard.authorization.nuspec",
+        "icon.png",
+        "lib/net45/Hangfire.Dashboard.Authorization.dll",
+        "lib/net45/Hangfire.Dashboard.Authorization.xml"
       ]
     },
     "Hangfire.NetCore/1.8.14": {
@@ -2855,6 +2897,18 @@
         "postgresql.png"
       ]
     },
+    "Owin/1.0.0": {
+      "sha512": "OseTFniKmyp76mEzOBwIKGBRS5eMoYNkMKaMXOpxx9jv88+b6mh1rSaw43vjBOItNhaLFG3d0a20PfHyibH5sw==",
+      "type": "package",
+      "path": "owin/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Owin.dll",
+        "owin.1.0.0.nupkg.sha512",
+        "owin.nuspec"
+      ]
+    },
     "Serilog/4.0.1": {
       "sha512": "pzeDRXdpSLSsgBHpZcmpIDxqMy845Ab4s+dfnBg0sN9h8q/4Wo3vAoe0QCGPze1Q06EVtEPupS+UvLm8iXQmTQ==",
       "type": "package",
@@ -3483,6 +3537,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Hangfire.Dashboard.Authorization >= 3.1.0",
       "Hangfire.NetCore >= 1.8.14",
       "Hangfire.PostgreSql >= 1.20.9",
       "Microsoft.EntityFrameworkCore >= 8.0.7",
@@ -3535,6 +3590,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "Hangfire.Dashboard.Authorization": {
+            "target": "Package",
+            "version": "[3.1.0, )"
+          },
           "Hangfire.NetCore": {
             "target": "Package",
             "version": "[1.8.14, )"
@@ -3589,5 +3648,27 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Hangfire.Dashboard.Authorization 3.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Hangfire.Dashboard.Authorization",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

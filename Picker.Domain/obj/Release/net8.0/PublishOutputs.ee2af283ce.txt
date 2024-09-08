@@ -1,0 +1,3 @@
+D:\Projects\Vilnyy-bot\Picker.Domain\bin\Release\net8.0\publish\Picker.Domain.dll
+D:\Projects\Vilnyy-bot\Picker.Domain\bin\Release\net8.0\publish\Picker.Domain.deps.json
+D:\Projects\Vilnyy-bot\Picker.Domain\bin\Release\net8.0\publish\Picker.Domain.pdb
