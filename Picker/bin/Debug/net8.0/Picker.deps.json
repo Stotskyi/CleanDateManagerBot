@@ -10,6 +10,8 @@
         "dependencies": {
           "Betalgo.OpenAI": "8.3.0",
           "EPPlus": "7.1.3",
+          "Hangfire.Dashboard.Basic.Authentication": "7.0.1",
+          "Hangfire.Dashboard.BasicAuthorization": "1.0.2",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "8.0.7",
           "Microsoft.EntityFrameworkCore.Design": "8.0.7",
           "Microsoft.Extensions.Logging.ApplicationInsights": "2.22.0",
@@ -123,6 +125,44 @@
           }
         }
       },
+      "Hangfire.Dashboard.Authorization/3.1.0": {
+        "dependencies": {
+          "Hangfire.Core": "1.8.14",
+          "Owin": "1.0.0"
+        },
+        "runtime": {
+          "lib/net45/Hangfire.Dashboard.Authorization.dll": {
+            "assemblyVersion": "3.1.0.0",
+            "fileVersion": "3.1.0.0"
+          }
+        }
+      },
+      "Hangfire.Dashboard.Basic.Authentication/7.0.1": {
+        "dependencies": {
+          "Hangfire.AspNetCore": "1.8.14",
+          "Hangfire.Core": "1.8.14",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.1",
+          "Microsoft.Extensions.Primitives": "8.0.0"
+        },
+        "runtime": {
+          "lib/net7.0/HangfireBasicAuthenticationFilter.dll": {
+            "assemblyVersion": "7.0.1.0",
+            "fileVersion": "7.0.1.0"
+          }
+        }
+      },
+      "Hangfire.Dashboard.BasicAuthorization/1.0.2": {
+        "dependencies": {
+          "Hangfire.AspNetCore": "1.8.14",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Hangfire.Dashboard.BasicAuthorization.dll": {
+            "assemblyVersion": "1.0.2.0",
+            "fileVersion": "1.0.2.0"
+          }
+        }
+      },
       "Hangfire.NetCore/1.8.14": {
         "dependencies": {
           "Hangfire.Core": "1.8.14",
@@ -188,6 +228,17 @@
             "assemblyVersion": "2.22.0.997",
             "fileVersion": "2.22.0.997"
           }
+        }
+      },
+      "Microsoft.AspNetCore.Http.Abstractions/2.1.1": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "2.1.1",
+          "System.Text.Encodings.Web": "8.0.0"
+        }
+      },
+      "Microsoft.AspNetCore.Http.Features/2.1.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "8.0.0"
         }
       },
       "Microsoft.AspNetCore.JsonPatch/8.0.7": {
@@ -781,6 +832,14 @@
           }
         }
       },
+      "Owin/1.0.0": {
+        "runtime": {
+          "lib/net40/Owin.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Serilog/4.0.1": {
         "runtime": {
           "lib/net8.0/Serilog.dll": {
@@ -1035,10 +1094,12 @@
       },
       "Picker.Persistence/1.0.0": {
         "dependencies": {
+          "Hangfire.Dashboard.Authorization": "3.1.0",
           "Hangfire.NetCore": "1.8.14",
           "Hangfire.PostgreSql": "1.20.9",
           "Microsoft.EntityFrameworkCore": "8.0.7",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.1",
+          "Microsoft.Extensions.Logging.ApplicationInsights": "2.22.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.4",
           "Picker.Application": "1.0.0",
           "SkiaSharp": "2.88.8"
@@ -1118,6 +1179,27 @@
       "path": "hangfire.core/1.8.14",
       "hashPath": "hangfire.core.1.8.14.nupkg.sha512"
     },
+    "Hangfire.Dashboard.Authorization/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WSCTw2szdv01arMPRcrzoL56MvooA5+miXlH4xNDJayDNO1fQ1LntHIwl1rMXvrYKfrZhQD46NsxkUggyCxfWw==",
+      "path": "hangfire.dashboard.authorization/3.1.0",
+      "hashPath": "hangfire.dashboard.authorization.3.1.0.nupkg.sha512"
+    },
+    "Hangfire.Dashboard.Basic.Authentication/7.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SsWDM/FcgNOiZaG9RbOZzg9ZbAw2NJUzZY2V4ChnGaHFI3yT7CXE+LB9EshqE/MX/jT55QTtmnZ2JYy6atSJWA==",
+      "path": "hangfire.dashboard.basic.authentication/7.0.1",
+      "hashPath": "hangfire.dashboard.basic.authentication.7.0.1.nupkg.sha512"
+    },
+    "Hangfire.Dashboard.BasicAuthorization/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tlDkF4pGOA7VthYtzpmekqC9Uh5DRhemEFyK1WJhzlkn46LLVmHGtlPjADJn99EFMJH6RHBkZhJBAO9Y3MiWYA==",
+      "path": "hangfire.dashboard.basicauthorization/1.0.2",
+      "hashPath": "hangfire.dashboard.basicauthorization.1.0.2.nupkg.sha512"
+    },
     "Hangfire.NetCore/1.8.14": {
       "type": "package",
       "serviceable": true,
@@ -1159,6 +1241,20 @@
       "sha512": "sha512-3AOM9bZtku7RQwHyMEY3tQMrHIgjcfRDa6YQpd/QG2LDGvMydSlL9Di+8LLMt7J2RDdfJ7/2jdYv6yHcMJAnNw==",
       "path": "microsoft.applicationinsights/2.22.0",
       "hashPath": "microsoft.applicationinsights.2.22.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Http.Abstractions/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kQUEVOU4loc8CPSb2WoHFTESqwIa8Ik7ysCBfTwzHAd0moWovc9JQLmhDIHlYLjHbyexqZAlkq/FPRUZqokebw==",
+      "path": "microsoft.aspnetcore.http.abstractions/2.1.1",
+      "hashPath": "microsoft.aspnetcore.http.abstractions.2.1.1.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Http.Features/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VklZ7hWgSvHBcDtwYYkdMdI/adlf7ebxTZ9kdzAhX+gUs5jSHE9mZlTamdgf9miSsxc1QjNazHXTDJdVPZKKTw==",
+      "path": "microsoft.aspnetcore.http.features/2.1.1",
+      "hashPath": "microsoft.aspnetcore.http.features.2.1.1.nupkg.sha512"
     },
     "Microsoft.AspNetCore.JsonPatch/8.0.7": {
       "type": "package",
@@ -1502,6 +1598,13 @@
       "sha512": "sha512-/hHd9MqTRVDgIpsToCcxMDxZqla0HAQACiITkq1+L9J2hmHKV6lBAPlauF+dlNSfHpus7rrljWx4nAanKD6qAw==",
       "path": "npgsql.entityframeworkcore.postgresql/8.0.4",
       "hashPath": "npgsql.entityframeworkcore.postgresql.8.0.4.nupkg.sha512"
+    },
+    "Owin/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OseTFniKmyp76mEzOBwIKGBRS5eMoYNkMKaMXOpxx9jv88+b6mh1rSaw43vjBOItNhaLFG3d0a20PfHyibH5sw==",
+      "path": "owin/1.0.0",
+      "hashPath": "owin.1.0.0.nupkg.sha512"
     },
     "Serilog/4.0.1": {
       "type": "package",

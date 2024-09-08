@@ -8,7 +8,7 @@ namespace Picker.Persistence.Repositories;
 
 public class ColiverRepository(ApplicationContext context) : IColiverRepository
 {
-    public async Task<string> WriteColiverAsync(string date, string username)
+    public async Task<string> WriteColiverAsync(string date, string username,string firsname,string lastname)
     {
         if (!int.TryParse(date, out int day)) return "Якусь небилицю ти ввів, роззуй очі і введи як мама вчила";
 
@@ -36,7 +36,7 @@ public class ColiverRepository(ApplicationContext context) : IColiverRepository
                 time.Colivers = new List<Coliver>();
             }
 
-            time.Colivers.Add(new Coliver() { Username = username });
+            time.Colivers.Add(new Coliver() { Username = username,FirstName = firsname,LastName = lastname });
         }
 
         context.CleaningTimes.Update(times.FirstOrDefault());
@@ -55,14 +55,20 @@ public class ColiverRepository(ApplicationContext context) : IColiverRepository
 
         if (!cleaningTimes.Any()) return "Яке курвисько не записалось ?!";
 
-        var usernames = cleaningTimes
+        var coliverDetails = cleaningTimes
             .SelectMany(ct => ct.Colivers)
-            .Select(c => c.Username)
+            .Select(c => new
+            {
+                c.Username
+            })
             .Distinct();
 
-        var username = string.Join(Environment.NewLine, usernames);
-        
-        return $"Сьогодні драє кухню @{username}";
+        var formattedNames = coliverDetails
+            .Select(c => "${c.Username}");
+
+        var message = $"Сьогодні драє кухню {string.Join(", ", formattedNames)}";
+
+        return message;
     }
 
     public async Task<(DateOnly startDate, DateOnly currentTime)> CreateCycle(byte count)

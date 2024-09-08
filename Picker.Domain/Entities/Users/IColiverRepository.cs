@@ -2,7 +2,7 @@
 
 public interface IColiverRepository
 {
-    public Task<string> WriteColiverAsync(string date, string username);
+    public Task<string> WriteColiverAsync(string date, string username,string firstname,string lastname);
     public Task<byte[]> GetCleanersTable();
     
     public Task<string> GetCleanerToday(DateOnly date);

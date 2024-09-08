@@ -7,4 +7,6 @@ public class Coliver
     public string Username { get; set; } = null!;
     
     public CleaningTime? CleaningTime { get; set; }
+    public string LastName { get; set; }
+    public string FirstName { get; set; }
 }

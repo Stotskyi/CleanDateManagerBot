@@ -43,7 +43,7 @@ public class MessageHandler(ILogger<MessageHandler> logger, ITelegramBotClient b
         userState.LastInteraction = DateTime.UtcNow;
             
         await userStateManager.SaveUserStateAsync(userState);
-        await botClient.SendTextMessageAsync(chatId, response, cancellationToken: cancellationToken);
+        await botClient.SendTextMessageAsync(chatId, response, cancellationToken: cancellationToken, parseMode: Telegram.Bot.Types.Enums.ParseMode.Html);
     }
     
     private async Task<string> HandleUserMessage(UserState userState, Message message, CancellationToken cancellationToken)
@@ -63,11 +63,14 @@ public class MessageHandler(ILogger<MessageHandler> logger, ITelegramBotClient b
         var command = commandFactory.GetCommand(message.Text!);
         var scheduleCommand = commandFactory.GetScheduleCommand(message.Text!);
         var dickCommand = commandFactory.GetDickCommand(message.Text!);
+        
         var username = await GetUsername(message,cancellationToken);
+        var firstname = await GetFirstName(message, cancellationToken);
+        var lastname = await GetLastName(message,cancellationToken);
 
         if (dickCommand is not null)
         {
-            return await dickCommand.Execute(username);
+            return await dickCommand.Execute(username, firstname,lastname);
         }
     
         if (scheduleCommand is not null)
@@ -87,9 +90,11 @@ public class MessageHandler(ILogger<MessageHandler> logger, ITelegramBotClient b
     {
         userState.State = "start";
         var day = message.Text;
-        string username = await GetUsername(message,cancellationToken);
+        var username = await GetUsername(message,cancellationToken);
+        var firstname = await GetFirstName(message, cancellationToken);
+        var lastname = await GetLastName(message, cancellationToken);
 
-        var result = await coliverRepository.WriteColiverAsync(day, username);
+        var result = await coliverRepository.WriteColiverAsync(day, username,firstname,lastname);
         return result;
     }
 
@@ -111,7 +116,24 @@ public class MessageHandler(ILogger<MessageHandler> logger, ITelegramBotClient b
         }
         var member = await botClient.GetChatMemberAsync(message.Chat.Id, message.From.Id);
         return member.User.Username;
-            
+    }
+    private async Task<string> GetFirstName(Message message, CancellationToken cancellationToken)
+    {
+        if (message.Chat.Type == Telegram.Bot.Types.Enums.ChatType.Private)
+        {
+            return $"@{message.Chat.FirstName}";
+        }
+        var member = await botClient.GetChatMemberAsync(message.Chat.Id, message.From.Id);
+        return member.User.FirstName;
+    }
+    private async Task<string> GetLastName(Message message, CancellationToken cancellationToken)
+    {
+        if (message.Chat.Type == Telegram.Bot.Types.Enums.ChatType.Private)
+        {
+            return $"@{message.Chat.LastName}";
+        }
+        var member = await botClient.GetChatMemberAsync(message.Chat.Id, message.From.Id);
+        return member.User.LastName;
     }
     private bool IsRecognizedCommand(string text)
     {

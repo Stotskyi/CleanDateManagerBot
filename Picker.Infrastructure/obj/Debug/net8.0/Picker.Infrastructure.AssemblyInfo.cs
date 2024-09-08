@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Picker.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5410e54b7c1e798b4a9f3832325a1b332cf219a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef739c418a2e49faf618fed573cfef5a6ab1f80b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Picker.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Picker.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

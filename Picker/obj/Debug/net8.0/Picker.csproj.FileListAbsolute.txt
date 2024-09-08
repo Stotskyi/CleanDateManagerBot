@@ -279,3 +279,7 @@ D:\Projects\Vilnyy-bot\Picker\bin\Debug\net8.0\Hangfire.Core.dll
 D:\Projects\Vilnyy-bot\Picker\bin\Debug\net8.0\Hangfire.NetCore.dll
 D:\Projects\Vilnyy-bot\Picker\bin\Debug\net8.0\Hangfire.PostgreSql.dll
 D:\Projects\Vilnyy-bot\Picker\bin\Debug\net8.0\appsettings.Production.json
+D:\Projects\Vilnyy-bot\Picker\bin\Debug\net8.0\Hangfire.Dashboard.Authorization.dll
+D:\Projects\Vilnyy-bot\Picker\bin\Debug\net8.0\HangfireBasicAuthenticationFilter.dll
+D:\Projects\Vilnyy-bot\Picker\bin\Debug\net8.0\Hangfire.Dashboard.BasicAuthorization.dll
+D:\Projects\Vilnyy-bot\Picker\bin\Debug\net8.0\Owin.dll

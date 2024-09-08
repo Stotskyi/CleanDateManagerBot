@@ -2,7 +2,7 @@ using Picker.Application.Data;
 using Picker.Domain.Entities.Users;
 using Telegram.Bot.Types;
 
-namespace Picker.Application.Commands;
+namespace Picker.Persistence.CommandFactory.Commands;
 
 public class EnrollCommand :  ICommand
 {

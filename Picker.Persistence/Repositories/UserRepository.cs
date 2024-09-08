@@ -29,11 +29,13 @@ public class UserRepository(ApplicationContext dbContext) : IUserRepository
             .Select(u => new
             {
                 Username = u.Username,
-                DickSize = u.DickSize
+                DickSize = u.DickSize,
+                FullName = u.FirstName + " " + u.LastName
+                
             })
-            .ToListAsync();
+            .OrderByDescending(u => u.DickSize).ToListAsync();
         var formattedStats = string.Join(Environment.NewLine, 
-            users.Select((s, index) => $"{index + 1}. {s.Username}:  {s.DickSize}"));
+            users.Select((s, index) => $"{index + 1}. {s.FullName} {(s.DickSize > 0 ? "має хуяку " : "має хуяку в жопі ")} {s.DickSize}"));
 
         return formattedStats;
     }
