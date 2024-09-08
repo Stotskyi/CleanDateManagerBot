@@ -51,22 +51,20 @@ app.MapControllers();
 
 app.UseHangfireDashboard("/hangfire", new DashboardOptions
 {
-    Authorization = new[] { new Hangfire.Dashboard.BasicAuthAuthorizationFilter(
-        new Hangfire.Dashboard.BasicAuthAuthorizationFilterOptions
+    Authorization = new[] {new BasicAuthAuthorizationFilter(new BasicAuthAuthorizationFilterOptions()
+    {
+        RequireSsl = true,
+        SslRedirect = false,
+        LoginCaseSensitive = true,
+        Users = new []
         {
-            RequireSsl = true, 
-            SslRedirect = false,
-            LoginCaseSensitive = false,
-            Users = new []
+            new BasicAuthAuthorizationUser
             {
-                new BasicAuthAuthorizationUser
-                {
-                    Login = "admin",
-                    PasswordClear = "password"
-                }
+                Login = "admin",  
+                PasswordClear = "admin"  
             }
-        })
-    }
+        }
+    })}
 });
 app.UseHangfireServer();
 
