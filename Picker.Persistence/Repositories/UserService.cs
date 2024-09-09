@@ -35,7 +35,7 @@ public class UserService(IUserRepository userRepository)
         user.LastCommandDate = DateTime.UtcNow;
         await userRepository.UpdateUserAsync(user);
         
-        return $"{user.Username} твій пісюн {(user.DickSize > 0 ? "виріс" : "зменшився")} на {Math.Abs(user.DickSize)}. Тепер його довжина: {user.DickSize}. Продовжуй грати завтра";
+        return $"{user.Username} твій пісюн {(user.DickSize > 0 ? "виріс" : "зменшився")} на {Math.Abs(randomNumber)}. Тепер його довжина: {user.DickSize}. Продовжуй грати завтра";
     }
 
     public async Task<string> GetStats()
