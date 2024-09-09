@@ -35,7 +35,7 @@ public class UserRepository(ApplicationContext dbContext) : IUserRepository
             })
             .OrderByDescending(u => u.DickSize).ToListAsync();
         var formattedStats = string.Join(Environment.NewLine, 
-            users.Select((s, index) => $"{index + 1}. {s.FullName} {(s.DickSize > 0 ? "має хуяку " : "має хуяку в жопі ")} {s.DickSize}"));
+            users.Select((s, index) => $"{index + 1}. {s.FullName} {(s.DickSize > 0 ? "має хуяку " : "має хуяку в жопі ")} {s.DickSize} см "));
 
         return formattedStats;
     }
