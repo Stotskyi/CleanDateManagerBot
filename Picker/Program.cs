@@ -68,7 +68,10 @@ app.UseHangfireDashboard("/hangfire", new DashboardOptions
         }
     })}
 });
-app.UseHangfireServer();
+app.UseHangfireServer(config =>
+{   
+    config.UseServer(2);
+});
 
 
 app.Run();
