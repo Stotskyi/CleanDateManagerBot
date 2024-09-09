@@ -30,8 +30,8 @@ public class UserService(IUserRepository userRepository)
         }
 
         
-        
-        user.DickSize += GetRandomValue();
+        var randomNumber = GetRandomValue();
+        user.DickSize += randomnumber;
         user.LastCommandDate = DateTime.UtcNow;
         await userRepository.UpdateUserAsync(user);
         
