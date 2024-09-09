@@ -68,7 +68,7 @@ app.UseHangfireDashboard("/hangfire", new DashboardOptions
         }
     })}
 });
-var options = new BackgroundJobServerOptions { WorkerCount = 2 };
+var options = new BackgroundJobServerOptions { WorkerCount = 2,SchedulePollingInterval = TimeSpan.FromSeconds(1) };
 app.UseHangfireServer(options);
 
 
