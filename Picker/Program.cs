@@ -68,10 +68,8 @@ app.UseHangfireDashboard("/hangfire", new DashboardOptions
         }
     })}
 });
-app.UseHangfireServer(config =>
-{   
-    config.UseServer(2);
-});
+var options = new BackgroundJobServerOptions { WorkerCount = 2 };
+app.UseHangfireServer(options);
 
 
 app.Run();
