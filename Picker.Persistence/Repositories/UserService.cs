@@ -31,7 +31,7 @@ public class UserService(IUserRepository userRepository)
 
         
         var randomNumber = GetRandomValue();
-        user.DickSize += randomnumber;
+        user.DickSize += randomNumber;
         user.LastCommandDate = DateTime.UtcNow;
         await userRepository.UpdateUserAsync(user);
         
