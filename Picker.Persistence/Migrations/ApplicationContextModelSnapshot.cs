@@ -38,7 +38,6 @@ namespace Picker.Persistence.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("LastName")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Username")
@@ -103,7 +102,6 @@ namespace Picker.Persistence.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("LastName")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Username")
