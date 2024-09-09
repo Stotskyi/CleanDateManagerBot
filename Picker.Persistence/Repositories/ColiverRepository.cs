@@ -64,7 +64,7 @@ public class ColiverRepository(ApplicationContext context) : IColiverRepository
             .Distinct();
 
         var formattedNames = coliverDetails
-            .Select(c => $"{c.Username}");
+            .Select(c => $"@{c.Username}");
 
         var message = $"Сьогодні драє кухню {string.Join(", ", formattedNames)}";
 
