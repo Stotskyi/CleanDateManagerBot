@@ -95,7 +95,6 @@ public class ColiverRepository(ApplicationContext context) : IColiverRepository
         }
 
         await context.CleaningTimes.AddRangeAsync(cleaningTimesToAdd);
-        await context.CleaningTimes.Where(c => c.Cycle == maxValue - 1).ExecuteDeleteAsync();
         await context.SaveChangesAsync();
 
         return (DateOnly.FromDateTime(DateTime.Now), currentTime);

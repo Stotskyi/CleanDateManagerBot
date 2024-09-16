@@ -19,7 +19,6 @@ public class CommandFactory(IColiverRepository coliverRepository, ITelegramBotCl
             var text when text.StartsWith("/generateCycle") => new GenerateCycleCommand(coliverRepository),
             _ => null
         };
-
     public IScheduleCommand GetScheduleCommand(string message) =>
         message switch
         {
