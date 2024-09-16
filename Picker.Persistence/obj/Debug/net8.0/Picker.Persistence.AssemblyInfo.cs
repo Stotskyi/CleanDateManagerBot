@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Picker.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+365feadcc5c07d1ee5e9811ef318ef2b8fef0ac8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e546d39e78701596922f5187df56d6684ed1afd")]
 [assembly: System.Reflection.AssemblyProductAttribute("Picker.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Picker.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
